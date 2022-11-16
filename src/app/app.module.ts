@@ -12,11 +12,13 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { CourseComponent } from './core/course/course.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule,

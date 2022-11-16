@@ -1,28 +1,20 @@
 mat-toolbar {
-    background: #e6252b;
+    background: #8e2de2;
     color: white;
+    box-shadow: 1px 4px 5px -4px rgb(0 0 0 / 75%);
 }
 mat-sidenav {
     margin: 16px;
     width: 200px;
     border-right: none;
-    background: #fd0100;
+    background: #d81c56; /* #8e2de2; */
     color: white;
     border-radius: 10px;
     padding: 16px;
     text-align: center;
+    box-shadow: 1px 4px 5px -4px rgb(0 0 0 / 100%);
 }
-.content {
-    height: calc(100vh - 98px);
-    border-radius: 10px;
-    margin: 16px;
-    margin-left: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: lightgray;
-}
+/* -webkit-linear-gradient(0deg,#8e2de2 0,#4a00e0 100%) */
 mat-sidenav-container {
     height: calc(100vh - 65px);
 }
@@ -71,19 +63,43 @@ mat-divider {
 }
 
 .content {
-    height: calc(100vh - 98px);
+    height: calc(100vh - 153px);
     border-radius: 0px;
     margin: 16px;
     margin-left: 32px;
+    margin-top: 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     font-size: 2rem;
     color: lightgray;
     flex-wrap: wrap;
-    overflow-y: auto;
+    overflow-y: auto;   
+    box-shadow: 1px 4px 5px -4px rgb(0 0 0 / 75%);
+    background: #fff url(../assets/images/floral-bg.png) no-repeat center bottom;
+    background-size: cover;
+}
+
+.lms-heading {
+    margin: 16px;
+    margin-bottom: 0px;
+    margin-left: 32px;
+    background: #d81c56;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    box-shadow: 1px 4px 5px -4px rgb(0 0 0 / 75%);
 }
 
 mat-sidenav {
     border-radius: 0px;
+}
+
+.mat-drawer-container {
+    background: transparent;
+}
+
+mat-sidenav-content {
+   
 }
