@@ -1,0 +1,89 @@
+<!-- <lms-header Heading="TOC"></lms-header> -->
+<div class="content-bg content-top-margin toc">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-9 padding-left-0">
+            <p-panel header="Topics">
+                <p-accordion>
+                    <p-accordionTab header="Topic 1">
+                       Content 1
+                    </p-accordionTab>
+                    <p-accordionTab header="Topic 2">
+                        Content 2
+                    </p-accordionTab>
+                    <p-accordionTab header="Topic 3">
+                        Content 3    
+                    </p-accordionTab>
+                    <p-accordionTab header="Topic 4">
+                        Content 1
+                     </p-accordionTab>
+                     <p-accordionTab header="Topic 5">
+                         Content 2
+                     </p-accordionTab>
+                     <p-accordionTab header="Topic 6">
+                         Content 3    
+                     </p-accordionTab>
+                     <p-accordionTab header="Topic 7">
+                        Content 1
+                     </p-accordionTab>
+                    
+                     
+                </p-accordion>
+            </p-panel>
+          </div>
+          <div class="col-3 padding-right-0 filter">
+            
+            <p-panel header="Filter">
+                <div class="filter-group">
+                    <h6>Class</h6>
+                    <p-autoComplete 
+                        placeholder="Select class"
+                        [(ngModel)]="selectedClass"
+                        [suggestions]="filteredClass" 
+                        (completeMethod)="filterClass($event)" 
+                        field="classname" 
+                        [dropdown]="isDropdown">
+                        <ng-template let-class pTemplate="item">
+                            <div class="class-item">                                
+                                <div><span>{{class.classname[0]}}</span>{{class.classname}}</div>
+                            </div>
+                        </ng-template>
+                    </p-autoComplete>
+                </div>
+         <div class="filter-group">
+            <h6>Subject</h6>
+            <p-autoComplete 
+                placeholder="Select subject"
+                [(ngModel)]="selectedSubject" 
+                [suggestions]="filteredSubject" 
+                (completeMethod)="filterSubject($event)" 
+                field="SubjectName" 
+                [dropdown]="isDropdown">
+                <ng-template let-subject pTemplate="item">
+                    <div class="country-item">
+                        <div>{{subject.SubjectName}}</div>
+                    </div>
+                </ng-template>
+            </p-autoComplete>
+        </div>
+        <div class="filter-group">
+            <h6>Book</h6>
+            <p-autoComplete 
+                placeholder="Select book"
+                [(ngModel)]="selectedBook" 
+                [suggestions]="filteredBooks" 
+                (completeMethod)="filterBook($event)" 
+                field="bookname" 
+                [dropdown]="isDropdown">
+                <ng-template let-book pTemplate="item">
+                    <div class="country-item">
+                        <div>{{book.bookname}}</div>
+                    </div>
+                </ng-template>
+            </p-autoComplete>
+        </div> 
+        </p-panel>
+        </div>
+        </div>
+      </div>
+</div>

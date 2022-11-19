@@ -1,5 +1,5 @@
 mat-toolbar {
-    background: #8e2de2;
+    background: #e70013;
     color: white;
     box-shadow: 1px 4px 5px -4px rgb(0 0 0 / 75%);
 }
@@ -7,7 +7,7 @@ mat-sidenav {
     margin: 16px;
     width: 200px;
     border-right: none;
-    background: #d81c56; /* #8e2de2; */
+    background: #023473; /* #8e2de2; */
     color: white;
     border-radius: 10px;
     padding: 16px;
@@ -62,35 +62,7 @@ mat-divider {
     cursor: pointer;
 }
 
-.content {
-    height: calc(100vh - 153px);
-    border-radius: 0px;
-    margin: 16px;
-    margin-left: 32px;
-    margin-top: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: lightgray;
-    flex-wrap: wrap;
-    overflow-y: auto;   
-    box-shadow: 1px 4px 5px -4px rgb(0 0 0 / 75%);
-    background: #fff url(../assets/images/floral-bg.png) no-repeat center bottom;
-    background-size: cover;
-}
 
-.lms-heading {
-    margin: 16px;
-    margin-bottom: 0px;
-    margin-left: 32px;
-    background: #d81c56;
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding: 10px 20px;
-    box-shadow: 1px 4px 5px -4px rgb(0 0 0 / 75%);
-}
 
 mat-sidenav {
     border-radius: 0px;
@@ -98,8 +70,4 @@ mat-sidenav {
 
 .mat-drawer-container {
     background: transparent;
-}
-
-mat-sidenav-content {
-   
 }
