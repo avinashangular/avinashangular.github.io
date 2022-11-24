@@ -50,6 +50,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
     box-shadow: 1px 4px 5px -4px rgb(0 0 0 / 75%);
 }
 
+.lms-heading i {
+    font-size: 28px;
+    line-height: 28px;
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 .menu-button {
     width: 100%;
     display: flex;
@@ -233,6 +242,13 @@ mat-sidenav {
     box-shadow: none;
 }
 
+.toc .p-panel .p-panel-header .p-panel-header-icon, .toc .toc .p-panel .p-panel-header .p-panel-header-icon, .toc .p-panel .p-panel-header .p-panel-header-icon:hover {
+    color: #ffffff;
+    background: none;
+    box-shadow: none;
+    font-size: 24px;
+}
+
 .lms-topic {
     display: flex;
     flex-wrap: wrap;
@@ -252,6 +268,61 @@ mat-sidenav {
 .lms-topic a:hover {
     color: #e70013;
     border-left: 5px solid #e70013;
+}
+
+.content-item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: 1px solid #d3c7c72e;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 1px 4px 5px -4px rgb(0 0 0 / 75%);
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-left: 6px solid #e70013;
+    cursor: pointer;
+}
+
+.content-item:hover {
+    border-left: 6px solid #023473;
+}
+
+.content-item .play-button {
+    padding: 10px;
+    width: 70px;
+    border: 6px solid #e70013;
+    margin-right: 10px;
+    background: #fff;
+    /* background: #023473; */
+    border-radius: 50%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-button img {
+    width: 36px;
+    margin-left: 8px;
+}
+
+.description {
+    flex-grow: 1;
+    width: 0;
+    overflow: hidden;
+    height: 72px;
+}
+
+.description h4 {
+    font-size: 18px;
+    color: #e70013;
+    white-space: nowrap;
+    border-bottom: 1px solid #e7001324;
+}
+
+.description p {
+    font-size: 14px;
 }
 
 @media screen and (max-width: 800px) {
