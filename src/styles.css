@@ -232,6 +232,28 @@ mat-sidenav {
 .toc .p-accordion .p-accordion-header:not(.p-disabled) .p-accordion-header-link:focus {
     box-shadow: none;
 }
+
+.lms-topic {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lms-topic a {
+    background: #0234731f;
+    color: #023473;
+    width: 100%;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 8px;    
+    border-left: 5px solid #0234731f;
+}
+
+.lms-topic a:hover {
+    color: #e70013;
+    border-left: 5px solid #e70013;
+}
+
 @media screen and (max-width: 800px) {
     .content-bg {
         margin-left: 16px;

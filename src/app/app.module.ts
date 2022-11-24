@@ -18,13 +18,15 @@ import { TableOfContentComponent } from './core/table-of-content/table-of-conten
 import {AutoCompleteModule} from 'primeng/autocomplete';
 import {PanelModule} from 'primeng/panel';
 import {AccordionModule} from 'primeng/accordion';
+import { ContentComponent } from './core/content/content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CourseComponent,
-    TableOfContentComponent
+    TableOfContentComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
