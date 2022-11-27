@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TocService } from '../toc.service';
 
 @Component({
   selector: 'lms-table-of-content',
@@ -7,68 +8,75 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableOfContentComponent implements OnInit {
 
-
   selectedClass:any;
   filteredClass:any[] = [];
-  classList = [
-    {
-        "classid": 1,
-        "classname": "Class 1",
-        "classnumber": 1,
-        "nextclass": 2
-    },
-    {
-        "classid": 2,
-        "classname": "Class 2",
-        "classnumber": 2,
-        "nextclass": 3
-    }
-  ]
+  classList = [];
 
   selectedSubject:any;
   filteredSubject:any[]=[];
-  subjectList:any[]=[
-    {
-        "SubjectID": 9,
-        "SubjectName": "Subject 1",
-        "ClassID": 1,
-        "SubjectIcon": "SubjectIcons/9.png"
-    },
-    {
-        "SubjectID": 12,
-        "SubjectName": "Subject 2",
-        "ClassID": 1,
-        "SubjectIcon": "SubjectIcons/12.png"
-    }
-  ];
+  subjectListMaster:any[]=[];
+  subjectList:any[]=[];
 
   selectedBook:any;
   filteredBooks:any[]=[];
-  bookList:any[]=[
-    {
-            "bookid": 5,
-            "bookname": "The Grammar Tree",
-            "bookyear": 2011,
-            "bookimage": "bookimages/5.png"
-        },
-        {
-            "bookid": 139,
-            "bookname": "English_APS",
-            "bookyear": 2013,
-            "bookimage": "bookimages/139.png"
-        }
-    ]
-    
+  bookList:any[]=[];
+  
+  seletedChapter:any;
+  filteredChapter:any[]=[];
+  chapterList:any[]=[];
 
-  selectedCountryAdvanced: any[] = [];
-  selectedCountry:any | undefined;
-  filteredCountries: any[]= [];
+  seletedTopic:any;
+  filteredTopic:any[]=[];
+  topicList:any[]=[];
+
   isDropdown:boolean = true;
   
 
-  constructor() { }
+  constructor(
+    private tocService: TocService
+  ) { }
 
   ngOnInit(): void {
+    this.tocService.getClassAndSubject(1).subscribe((data:any)=>{
+      this.classList = data['ClassCollection'];
+      this.subjectListMaster = data['Subject'];
+    });
+  }
+
+  onClassSelect(event:any) {
+   this.subjectList = this.subjectListMaster.filter((subject:any)=> {
+      if(subject.ClassID == event.classid) {
+        return true;
+      }
+      return false;
+    });
+  }
+
+  onSubjectSelect(event:any) {
+    this.tocService.getBookChapterAndTopic(this.selectedClass.classid,event.SubjectID).subscribe((data:any)=>{
+      this.bookList = data.book;
+      this.chapterList = data.chapter;
+      this.topicList = data.topic;
+    });
+  }
+
+  onBookSelect(event:any){
+    this.filteredChapter = this.chapterList.filter((chapter:any)=>{
+      if(chapter.bookid == event.bookid) {
+        return true;
+      }
+      return false;
+    });
+  }
+
+  getTopics(chapterId:number) {
+    this.filteredTopic = this.topicList.filter((topic:any)=>{
+      if(topic.chapterid == chapterId) {
+        return true
+      }
+      return false;
+    });
+    return this.filteredTopic;
   }
 
   filterClass(event:any){
@@ -76,7 +84,7 @@ export class TableOfContentComponent implements OnInit {
     let query = event.query;
 
     for(let i = 0; i < this.classList.length; i++) {
-        let classes = this.classList[i];
+        let classes:any = this.classList[i];
         if (classes.classname.toLowerCase().indexOf(query.toLowerCase()) == 0) {
             filtered.push(classes);
         }
@@ -114,3 +122,5 @@ export class TableOfContentComponent implements OnInit {
   }
 
 }
+
+
