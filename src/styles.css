@@ -280,26 +280,29 @@ mat-sidenav {
     box-shadow: 1px 4px 5px -4px rgb(0 0 0 / 75%);
     margin-bottom: 20px;
     overflow: hidden;
-    border-left: 6px solid #e70013;
+    border-left: 6px solid #023473;
     cursor: pointer;
 }
 
 .content-item:hover {
-    border-left: 6px solid #023473;
+    border-left: 6px solid #e70013;
 }
 
 .content-item .play-button {
-    padding: 10px;
-    width: 70px;
-    border: 6px solid #e70013;
-    margin-right: 10px;
-    background: #fff;
+    /* padding: 10px;
+    width: 70px; */
+    /* border: 6px solid #e70013; */
+    /* margin-right: 10px;
+    background: #fff; */
     /* background: #023473; */
-    border-radius: 50%;
+    /* border-radius: 50%;
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+
+    margin-right: 16px;
+    background: #fff;
 }
 
 .play-button img {
@@ -316,7 +319,7 @@ mat-sidenav {
 
 .description h4 {
     font-size: 18px;
-    color: #e70013;
+    color: #023473;
     white-space: nowrap;
     border-bottom: 1px solid #e7001324;
 }

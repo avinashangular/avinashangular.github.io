@@ -4,104 +4,19 @@
 <div class="content-bg content-top-margin toc">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" *ngFor="let content of constentList">
                 <div class="content-item">
                     <div class="play-button">
-                        <img src="assets/images/play-64.png" alt="play">
+                        <img *ngIf="content.mediatype == 'mp4'" src="assets/images/play-64.png" alt="play">
+                        <img *ngIf="content.mediatype == 'html'" src="assets/images/html.png" alt="html">
                     </div>
                     <div class="description">
-                        <h4>Cultural and Ethnic Studies</h4>
+                        <h4>{{content.displayname}}</h4>
                         <p>Social Sciences can be defined as the study of human society</p>
                     </div>
                     
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="content-item">
-                    <div class="play-button">
-                        <img src="assets/images/play-64.png" alt="play">
-                    </div>
-                    <div class="description">
-                        <h4>Cultural and Ethnic Studies</h4>
-                        <p>Social Sciences can be defined as the study of human society</p>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="content-item">
-                    <div class="play-button">
-                        <img src="assets/images/play-64.png" alt="play">
-                    </div>
-                    <div class="description">
-                        <h4>Cultural and Ethnic Studies</h4>
-                        <p>Social Sciences can be defined as the study of human society</p>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="content-item">
-                    <div class="play-button">
-                        <img src="assets/images/play-64.png" alt="play">
-                    </div>
-                    <div class="description">
-                        <h4>Cultural and Ethnic Studies</h4>
-                        <p>Social Sciences can be defined as the study of human society</p>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="content-item">
-                    <div class="play-button">
-                        <img src="assets/images/play-64.png" alt="play">
-                    </div>
-                    <div class="description">
-                        <h4>Cultural and Ethnic Studies</h4>
-                        <p>Social Sciences can be defined as the study of human society</p>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="content-item">
-                    <div class="play-button">
-                        <img src="assets/images/play-64.png" alt="play">
-                    </div>
-                    <div class="description">
-                        <h4>Cultural and Ethnic Studies</h4>
-                        <p>Social Sciences can be defined as the study of human society</p>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="content-item">
-                    <div class="play-button">
-                        <img src="assets/images/play-64.png" alt="play">
-                    </div>
-                    <div class="description">
-                        <h4>Cultural and Ethnic Studies</h4>
-                        <p>Social Sciences can be defined as the study of human society</p>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="content-item">
-                    <div class="play-button">
-                        <img src="assets/images/play-64.png" alt="play">
-                    </div>
-                    <div class="description">
-                        <h4>Cultural and Ethnic Studies</h4>
-                        <p>Social Sciences can be defined as the study of human society</p>
-                    </div>
-                    
-                </div>
-            </div>
-           
-            
         </div>
     </div>
 </div>

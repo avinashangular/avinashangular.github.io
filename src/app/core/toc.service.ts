@@ -13,18 +13,22 @@ export class TocService {
     private http: HttpClient
   ) { }
 
-  getClassAndSubject(id:number) {
-    let params = new HttpParams();
+  getClassAndSubject(id:number) {;
     return this.http.post(`${this.hostName}${this.port}/Curriculum/GetClassAndSubjectByUserId`, {
       "ID": id
     });
   }
 
   getBookChapterAndTopic(classId:number, subjectId:number) {
-    let params = new HttpParams();
     return this.http.post(`${this.hostName}${this.port}/Curriculum/GetTOCByClassSubject`, {
       "ClassID": classId,
       "SubjectID": subjectId
-  });
+    });
+  }
+
+  getContentByTopic(topicId:number) {
+    return this.http.post(`${this.hostName}${this.port}/Contents/GetContentsByTopicID`, {
+      "ID": topicId
+    });
   }
 }
