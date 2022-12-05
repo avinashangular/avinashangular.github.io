@@ -9,6 +9,7 @@ const routes: Routes = [
   { path:'course', component: CourseComponent },
   { path: 'toc', component: TableOfContentComponent },
   { path: 'content', component: ContentComponent},
+  { path: 'mcq', loadChildren: ()=> import('./modules/mcq/mcq.module').then(m => m.McqModule)},
   { path:'**', redirectTo:"course" }
 ];
 

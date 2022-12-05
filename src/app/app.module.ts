@@ -5,7 +5,6 @@ import { FormsModule }   from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './core/header/header.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -20,11 +19,11 @@ import { PanelModule } from 'primeng/panel';
 import { AccordionModule } from 'primeng/accordion';
 import { ContentComponent } from './core/content/content.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     CourseComponent,
     TableOfContentComponent,
     ContentComponent
@@ -42,7 +41,8 @@ import { HttpClientModule } from '@angular/common/http';
     AutoCompleteModule,
     PanelModule,
     AccordionModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ],
   providers: [{provide : LocationStrategy , useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]

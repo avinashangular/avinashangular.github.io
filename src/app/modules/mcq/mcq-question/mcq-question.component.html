@@ -1,0 +1,32 @@
+<lms-header Heading="MCQ">
+    <!-- <i routerLink="/mcq" class="pi pi-arrow-circle-left"></i> -->
+</lms-header>
+<div class="content-bg content-top-margin mcq">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 mt-3">
+               <h5>{{currentQuestion.qtext}}</h5>
+            </div>
+            <div class="col-lg-12">
+                <hr/>
+            </div>
+            <div class="col-lg-6 mt-4" *ngFor="let option of currentQuestion.options">
+                <button class="option" [ngClass]="{
+                    'wrong-option':option.iscorrect == 'N' && option?.clicked,
+                    'right-option':option.iscorrect == 'Y' && option?.clicked
+                  }" (click)="option.clicked =  true">
+                    {{option.anstext}} <mat-icon *ngIf="option.iscorrect == 'N' && option?.clicked">close</mat-icon><mat-icon *ngIf="option.iscorrect == 'Y' && option?.clicked">check</mat-icon>
+                </button>
+            </div>
+            <div class="col-lg-12 text-center mt-5">
+                <hr/>
+            </div>
+            <div class="col-lg-12 text-center mt-5">
+                <div class="navigation">
+                    <button (click)="changeQuestion('pre')" type="button" class="btn btn-primary" [disabled]="currentQuestionIndex == 0">Previous</button>
+                    <button (click)="changeQuestion('next')" type="button" class="btn btn-primary" [disabled]="currentQuestionIndex == this.questions.length - 1">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,1878 @@
+{
+    "ClassCollection": [
+      {
+        "classid": 1,
+        "classname": "Class 1",
+        "classnumber": 1,
+        "nextclass": 2
+      },
+      {
+        "classid": 1,
+        "classname": "Class 1",
+        "classnumber": 1,
+        "nextclass": 2
+      },
+      {
+        "classid": 1,
+        "classname": "Class 1",
+        "classnumber": 1,
+        "nextclass": 2
+      },
+      {
+        "classid": 1,
+        "classname": "Class 1",
+        "classnumber": 1,
+        "nextclass": 2
+      },
+      {
+        "classid": 1,
+        "classname": "Class 1",
+        "classnumber": 1,
+        "nextclass": 2
+      },
+      {
+        "classid": 1,
+        "classname": "Class 1",
+        "classnumber": 1,
+        "nextclass": 2
+      },
+      {
+        "classid": 2,
+        "classname": "Class 2",
+        "classnumber": 2,
+        "nextclass": 3
+      },
+      {
+        "classid": 2,
+        "classname": "Class 2",
+        "classnumber": 2,
+        "nextclass": 3
+      },
+      {
+        "classid": 2,
+        "classname": "Class 2",
+        "classnumber": 2,
+        "nextclass": 3
+      },
+      {
+        "classid": 2,
+        "classname": "Class 2",
+        "classnumber": 2,
+        "nextclass": 3
+      },
+      {
+        "classid": 2,
+        "classname": "Class 2",
+        "classnumber": 2,
+        "nextclass": 3
+      },
+      {
+        "classid": 2,
+        "classname": "Class 2",
+        "classnumber": 2,
+        "nextclass": 3
+      },
+      {
+        "classid": 3,
+        "classname": "Class 3",
+        "classnumber": 3,
+        "nextclass": 4
+      },
+      {
+        "classid": 3,
+        "classname": "Class 3",
+        "classnumber": 3,
+        "nextclass": 4
+      },
+      {
+        "classid": 3,
+        "classname": "Class 3",
+        "classnumber": 3,
+        "nextclass": 4
+      },
+      {
+        "classid": 3,
+        "classname": "Class 3",
+        "classnumber": 3,
+        "nextclass": 4
+      },
+      {
+        "classid": 3,
+        "classname": "Class 3",
+        "classnumber": 3,
+        "nextclass": 4
+      },
+      {
+        "classid": 3,
+        "classname": "Class 3",
+        "classnumber": 3,
+        "nextclass": 4
+      },
+      {
+        "classid": 4,
+        "classname": "Class 4",
+        "classnumber": 4,
+        "nextclass": 5
+      },
+      {
+        "classid": 4,
+        "classname": "Class 4",
+        "classnumber": 4,
+        "nextclass": 5
+      },
+      {
+        "classid": 4,
+        "classname": "Class 4",
+        "classnumber": 4,
+        "nextclass": 5
+      },
+      {
+        "classid": 4,
+        "classname": "Class 4",
+        "classnumber": 4,
+        "nextclass": 5
+      },
+      {
+        "classid": 4,
+        "classname": "Class 4",
+        "classnumber": 4,
+        "nextclass": 5
+      },
+      {
+        "classid": 4,
+        "classname": "Class 4",
+        "classnumber": 4,
+        "nextclass": 5
+      },
+      {
+        "classid": 5,
+        "classname": "Class 5",
+        "classnumber": 5,
+        "nextclass": 6
+      },
+      {
+        "classid": 5,
+        "classname": "Class 5",
+        "classnumber": 5,
+        "nextclass": 6
+      },
+      {
+        "classid": 5,
+        "classname": "Class 5",
+        "classnumber": 5,
+        "nextclass": 6
+      },
+      {
+        "classid": 5,
+        "classname": "Class 5",
+        "classnumber": 5,
+        "nextclass": 6
+      },
+      {
+        "classid": 5,
+        "classname": "Class 5",
+        "classnumber": 5,
+        "nextclass": 6
+      },
+      {
+        "classid": 5,
+        "classname": "Class 5",
+        "classnumber": 5,
+        "nextclass": 6
+      },
+      {
+        "classid": 6,
+        "classname": "Class 6",
+        "classnumber": 6,
+        "nextclass": 7
+      },
+      {
+        "classid": 6,
+        "classname": "Class 6",
+        "classnumber": 6,
+        "nextclass": 7
+      },
+      {
+        "classid": 6,
+        "classname": "Class 6",
+        "classnumber": 6,
+        "nextclass": 7
+      },
+      {
+        "classid": 6,
+        "classname": "Class 6",
+        "classnumber": 6,
+        "nextclass": 7
+      },
+      {
+        "classid": 6,
+        "classname": "Class 6",
+        "classnumber": 6,
+        "nextclass": 7
+      },
+      {
+        "classid": 6,
+        "classname": "Class 6",
+        "classnumber": 6,
+        "nextclass": 7
+      },
+      {
+        "classid": 6,
+        "classname": "Class 6",
+        "classnumber": 6,
+        "nextclass": 7
+      },
+      {
+        "classid": 7,
+        "classname": "Class 7",
+        "classnumber": 7,
+        "nextclass": 8
+      },
+      {
+        "classid": 7,
+        "classname": "Class 7",
+        "classnumber": 7,
+        "nextclass": 8
+      },
+      {
+        "classid": 7,
+        "classname": "Class 7",
+        "classnumber": 7,
+        "nextclass": 8
+      },
+      {
+        "classid": 7,
+        "classname": "Class 7",
+        "classnumber": 7,
+        "nextclass": 8
+      },
+      {
+        "classid": 7,
+        "classname": "Class 7",
+        "classnumber": 7,
+        "nextclass": 8
+      },
+      {
+        "classid": 7,
+        "classname": "Class 7",
+        "classnumber": 7,
+        "nextclass": 8
+      },
+      {
+        "classid": 7,
+        "classname": "Class 7",
+        "classnumber": 7,
+        "nextclass": 8
+      },
+      {
+        "classid": 8,
+        "classname": "Class 8",
+        "classnumber": 8,
+        "nextclass": 9
+      },
+      {
+        "classid": 8,
+        "classname": "Class 8",
+        "classnumber": 8,
+        "nextclass": 9
+      },
+      {
+        "classid": 8,
+        "classname": "Class 8",
+        "classnumber": 8,
+        "nextclass": 9
+      },
+      {
+        "classid": 8,
+        "classname": "Class 8",
+        "classnumber": 8,
+        "nextclass": 9
+      },
+      {
+        "classid": 8,
+        "classname": "Class 8",
+        "classnumber": 8,
+        "nextclass": 9
+      },
+      {
+        "classid": 8,
+        "classname": "Class 8",
+        "classnumber": 8,
+        "nextclass": 9
+      },
+      {
+        "classid": 8,
+        "classname": "Class 8",
+        "classnumber": 8,
+        "nextclass": 9
+      },
+      {
+        "classid": 9,
+        "classname": "Class 9",
+        "classnumber": 9,
+        "nextclass": 10
+      },
+      {
+        "classid": 9,
+        "classname": "Class 9",
+        "classnumber": 9,
+        "nextclass": 10
+      },
+      {
+        "classid": 9,
+        "classname": "Class 9",
+        "classnumber": 9,
+        "nextclass": 10
+      },
+      {
+        "classid": 9,
+        "classname": "Class 9",
+        "classnumber": 9,
+        "nextclass": 10
+      },
+      {
+        "classid": 9,
+        "classname": "Class 9",
+        "classnumber": 9,
+        "nextclass": 10
+      },
+      {
+        "classid": 9,
+        "classname": "Class 9",
+        "classnumber": 9,
+        "nextclass": 10
+      },
+      {
+        "classid": 9,
+        "classname": "Class 9",
+        "classnumber": 9,
+        "nextclass": 10
+      },
+      {
+        "classid": 9,
+        "classname": "Class 9",
+        "classnumber": 9,
+        "nextclass": 10
+      },
+      {
+        "classid": 9,
+        "classname": "Class 9",
+        "classnumber": 9,
+        "nextclass": 10
+      },
+      {
+        "classid": 9,
+        "classname": "Class 9",
+        "classnumber": 9,
+        "nextclass": 10
+      },
+      {
+        "classid": 9,
+        "classname": "Class 9",
+        "classnumber": 9,
+        "nextclass": 10
+      },
+      {
+        "classid": 9,
+        "classname": "Class 9",
+        "classnumber": 9,
+        "nextclass": 10
+      },
+      {
+        "classid": 10,
+        "classname": "Class 10",
+        "classnumber": 10,
+        "nextclass": 11
+      },
+      {
+        "classid": 10,
+        "classname": "Class 10",
+        "classnumber": 10,
+        "nextclass": 11
+      },
+      {
+        "classid": 10,
+        "classname": "Class 10",
+        "classnumber": 10,
+        "nextclass": 11
+      },
+      {
+        "classid": 10,
+        "classname": "Class 10",
+        "classnumber": 10,
+        "nextclass": 11
+      },
+      {
+        "classid": 10,
+        "classname": "Class 10",
+        "classnumber": 10,
+        "nextclass": 11
+      },
+      {
+        "classid": 10,
+        "classname": "Class 10",
+        "classnumber": 10,
+        "nextclass": 11
+      },
+      {
+        "classid": 10,
+        "classname": "Class 10",
+        "classnumber": 10,
+        "nextclass": 11
+      },
+      {
+        "classid": 10,
+        "classname": "Class 10",
+        "classnumber": 10,
+        "nextclass": 11
+      },
+      {
+        "classid": 10,
+        "classname": "Class 10",
+        "classnumber": 10,
+        "nextclass": 11
+      },
+      {
+        "classid": 10,
+        "classname": "Class 10",
+        "classnumber": 10,
+        "nextclass": 11
+      },
+      {
+        "classid": 10,
+        "classname": "Class 10",
+        "classnumber": 10,
+        "nextclass": 11
+      },
+      {
+        "classid": 10,
+        "classname": "Class 10",
+        "classnumber": 10,
+        "nextclass": 11
+      },
+      {
+        "classid": 11,
+        "classname": "Class 11",
+        "classnumber": 11,
+        "nextclass": 12
+      },
+      {
+        "classid": 11,
+        "classname": "Class 11",
+        "classnumber": 11,
+        "nextclass": 12
+      },
+      {
+        "classid": 11,
+        "classname": "Class 11",
+        "classnumber": 11,
+        "nextclass": 12
+      },
+      {
+        "classid": 11,
+        "classname": "Class 11",
+        "classnumber": 11,
+        "nextclass": 12
+      },
+      {
+        "classid": 11,
+        "classname": "Class 11",
+        "classnumber": 11,
+        "nextclass": 12
+      },
+      {
+        "classid": 11,
+        "classname": "Class 11",
+        "classnumber": 11,
+        "nextclass": 12
+      },
+      {
+        "classid": 11,
+        "classname": "Class 11",
+        "classnumber": 11,
+        "nextclass": 12
+      },
+      {
+        "classid": 11,
+        "classname": "Class 11",
+        "classnumber": 11,
+        "nextclass": 12
+      },
+      {
+        "classid": 11,
+        "classname": "Class 11",
+        "classnumber": 11,
+        "nextclass": 12
+      },
+      {
+        "classid": 11,
+        "classname": "Class 11",
+        "classnumber": 11,
+        "nextclass": 12
+      },
+      {
+        "classid": 11,
+        "classname": "Class 11",
+        "classnumber": 11,
+        "nextclass": 12
+      },
+      {
+        "classid": 11,
+        "classname": "Class 11",
+        "classnumber": 11,
+        "nextclass": 12
+      },
+      {
+        "classid": 11,
+        "classname": "Class 11",
+        "classnumber": 11,
+        "nextclass": 12
+      },
+      {
+        "classid": 11,
+        "classname": "Class 11",
+        "classnumber": 11,
+        "nextclass": 12
+      },
+      {
+        "classid": 11,
+        "classname": "Class 11",
+        "classnumber": 11,
+        "nextclass": 12
+      },
+      {
+        "classid": 11,
+        "classname": "Class 11",
+        "classnumber": 11,
+        "nextclass": 12
+      },
+      {
+        "classid": 11,
+        "classname": "Class 11",
+        "classnumber": 11,
+        "nextclass": 12
+      },
+      {
+        "classid": 12,
+        "classname": "Class 12",
+        "classnumber": 12,
+        "nextclass": -1
+      },
+      {
+        "classid": 12,
+        "classname": "Class 12",
+        "classnumber": 12,
+        "nextclass": -1
+      },
+      {
+        "classid": 12,
+        "classname": "Class 12",
+        "classnumber": 12,
+        "nextclass": -1
+      },
+      {
+        "classid": 12,
+        "classname": "Class 12",
+        "classnumber": 12,
+        "nextclass": -1
+      },
+      {
+        "classid": 12,
+        "classname": "Class 12",
+        "classnumber": 12,
+        "nextclass": -1
+      },
+      {
+        "classid": 12,
+        "classname": "Class 12",
+        "classnumber": 12,
+        "nextclass": -1
+      },
+      {
+        "classid": 12,
+        "classname": "Class 12",
+        "classnumber": 12,
+        "nextclass": -1
+      },
+      {
+        "classid": 12,
+        "classname": "Class 12",
+        "classnumber": 12,
+        "nextclass": -1
+      },
+      {
+        "classid": 12,
+        "classname": "Class 12",
+        "classnumber": 12,
+        "nextclass": -1
+      },
+      {
+        "classid": 12,
+        "classname": "Class 12",
+        "classnumber": 12,
+        "nextclass": -1
+      },
+      {
+        "classid": 12,
+        "classname": "Class 12",
+        "classnumber": 12,
+        "nextclass": -1
+      },
+      {
+        "classid": 12,
+        "classname": "Class 12",
+        "classnumber": 12,
+        "nextclass": -1
+      },
+      {
+        "classid": 12,
+        "classname": "Class 12",
+        "classnumber": 12,
+        "nextclass": -1
+      },
+      {
+        "classid": 12,
+        "classname": "Class 12",
+        "classnumber": 12,
+        "nextclass": -1
+      },
+      {
+        "classid": 12,
+        "classname": "Class 12",
+        "classnumber": 12,
+        "nextclass": -1
+      },
+      {
+        "classid": 12,
+        "classname": "Class 12",
+        "classnumber": 12,
+        "nextclass": -1
+      },
+      {
+        "classid": 12,
+        "classname": "Class 12",
+        "classnumber": 12,
+        "nextclass": -1
+      },
+      {
+        "classid": 13,
+        "classname": "KG",
+        "classnumber": 13,
+        "nextclass": 1
+      },
+      {
+        "classid": 13,
+        "classname": "KG",
+        "classnumber": 13,
+        "nextclass": 1
+      },
+      {
+        "classid": 13,
+        "classname": "KG",
+        "classnumber": 13,
+        "nextclass": 1
+      },
+      {
+        "classid": 13,
+        "classname": "KG",
+        "classnumber": 13,
+        "nextclass": 1
+      },
+      {
+        "classid": 13,
+        "classname": "KG",
+        "classnumber": 13,
+        "nextclass": 1
+      },
+      {
+        "classid": 13,
+        "classname": "KG",
+        "classnumber": 13,
+        "nextclass": 1
+      },
+      {
+        "classid": 13,
+        "classname": "KG",
+        "classnumber": 13,
+        "nextclass": 1
+      },
+      {
+        "classid": 13,
+        "classname": "KG",
+        "classnumber": 13,
+        "nextclass": 1
+      },
+      {
+        "classid": 13,
+        "classname": "KG",
+        "classnumber": 13,
+        "nextclass": 1
+      },
+      {
+        "classid": 13,
+        "classname": "KG",
+        "classnumber": 13,
+        "nextclass": 1
+      },
+      {
+        "classid": 13,
+        "classname": "KG",
+        "classnumber": 13,
+        "nextclass": 1
+      },
+      {
+        "classid": 13,
+        "classname": "KG",
+        "classnumber": 13,
+        "nextclass": 1
+      },
+      {
+        "classid": 13,
+        "classname": "KG",
+        "classnumber": 13,
+        "nextclass": 1
+      },
+      {
+        "classid": 13,
+        "classname": "KG",
+        "classnumber": 13,
+        "nextclass": 1
+      },
+      {
+        "classid": 13,
+        "classname": "KG",
+        "classnumber": 13,
+        "nextclass": 1
+      },
+      {
+        "classid": 13,
+        "classname": "KG",
+        "classnumber": 13,
+        "nextclass": 1
+      },
+      {
+        "classid": 14,
+        "classname": "Nursery",
+        "classnumber": 14,
+        "nextclass": 14
+      },
+      {
+        "classid": 14,
+        "classname": "Nursery",
+        "classnumber": 14,
+        "nextclass": 14
+      },
+      {
+        "classid": 14,
+        "classname": "Nursery",
+        "classnumber": 14,
+        "nextclass": 14
+      },
+      {
+        "classid": 14,
+        "classname": "Nursery",
+        "classnumber": 14,
+        "nextclass": 14
+      },
+      {
+        "classid": 14,
+        "classname": "Nursery",
+        "classnumber": 14,
+        "nextclass": 14
+      },
+      {
+        "classid": 14,
+        "classname": "Nursery",
+        "classnumber": 14,
+        "nextclass": 14
+      },
+      {
+        "classid": 14,
+        "classname": "Nursery",
+        "classnumber": 14,
+        "nextclass": 14
+      },
+      {
+        "classid": 14,
+        "classname": "Nursery",
+        "classnumber": 14,
+        "nextclass": 14
+      },
+      {
+        "classid": 14,
+        "classname": "Nursery",
+        "classnumber": 14,
+        "nextclass": 14
+      },
+      {
+        "classid": 14,
+        "classname": "Nursery",
+        "classnumber": 14,
+        "nextclass": 14
+      },
+      {
+        "classid": 14,
+        "classname": "Nursery",
+        "classnumber": 14,
+        "nextclass": 14
+      },
+      {
+        "classid": 14,
+        "classname": "Nursery",
+        "classnumber": 14,
+        "nextclass": 14
+      },
+      {
+        "classid": 14,
+        "classname": "Nursery",
+        "classnumber": 14,
+        "nextclass": 14
+      },
+      {
+        "classid": 14,
+        "classname": "Nursery",
+        "classnumber": 14,
+        "nextclass": 14
+      },
+      {
+        "classid": 14,
+        "classname": "Nursery",
+        "classnumber": 14,
+        "nextclass": 14
+      },
+      {
+        "classid": 14,
+        "classname": "Nursery",
+        "classnumber": 14,
+        "nextclass": 14
+      },
+      {
+        "classid": 15,
+        "classname": "Pre Nursery",
+        "classnumber": 15,
+        "nextclass": 15
+      },
+      {
+        "classid": 15,
+        "classname": "Pre Nursery",
+        "classnumber": 15,
+        "nextclass": 15
+      },
+      {
+        "classid": 15,
+        "classname": "Pre Nursery",
+        "classnumber": 15,
+        "nextclass": 15
+      },
+      {
+        "classid": 15,
+        "classname": "Pre Nursery",
+        "classnumber": 15,
+        "nextclass": 15
+      },
+      {
+        "classid": 15,
+        "classname": "Pre Nursery",
+        "classnumber": 15,
+        "nextclass": 15
+      },
+      {
+        "classid": 15,
+        "classname": "Pre Nursery",
+        "classnumber": 15,
+        "nextclass": 15
+      },
+      {
+        "classid": 15,
+        "classname": "Pre Nursery",
+        "classnumber": 15,
+        "nextclass": 15
+      },
+      {
+        "classid": 15,
+        "classname": "Pre Nursery",
+        "classnumber": 15,
+        "nextclass": 15
+      },
+      {
+        "classid": 15,
+        "classname": "Pre Nursery",
+        "classnumber": 15,
+        "nextclass": 15
+      },
+      {
+        "classid": 15,
+        "classname": "Pre Nursery",
+        "classnumber": 15,
+        "nextclass": 15
+      },
+      {
+        "classid": 15,
+        "classname": "Pre Nursery",
+        "classnumber": 15,
+        "nextclass": 15
+      },
+      {
+        "classid": 15,
+        "classname": "Pre Nursery",
+        "classnumber": 15,
+        "nextclass": 15
+      },
+      {
+        "classid": 15,
+        "classname": "Pre Nursery",
+        "classnumber": 15,
+        "nextclass": 15
+      },
+      {
+        "classid": 15,
+        "classname": "Pre Nursery",
+        "classnumber": 15,
+        "nextclass": 15
+      },
+      {
+        "classid": 15,
+        "classname": "Pre Nursery",
+        "classnumber": 15,
+        "nextclass": 15
+      }
+    ],
+    "Subject": [
+      {
+        "SubjectID": 9,
+        "SubjectName": "Class 1",
+        "ClassID": 1,
+        "SubjectIcon": "SubjectIcons/9.png"
+      },
+      {
+        "SubjectID": 12,
+        "SubjectName": "Class 1",
+        "ClassID": 1,
+        "SubjectIcon": "SubjectIcons/12.png"
+      },
+      {
+        "SubjectID": 3,
+        "SubjectName": "Class 1",
+        "ClassID": 1,
+        "SubjectIcon": "SubjectIcons/3.png"
+      },
+      {
+        "SubjectID": 5,
+        "SubjectName": "Class 1",
+        "ClassID": 1,
+        "SubjectIcon": "SubjectIcons/5.png"
+      },
+      {
+        "SubjectID": 36,
+        "SubjectName": "Class 1",
+        "ClassID": 1,
+        "SubjectIcon": "SubjectIcons/36.png"
+      },
+      {
+        "SubjectID": 16,
+        "SubjectName": "Class 1",
+        "ClassID": 1,
+        "SubjectIcon": "SubjectIcons/16.png"
+      },
+      {
+        "SubjectID": 9,
+        "SubjectName": "Class 2",
+        "ClassID": 2,
+        "SubjectIcon": "SubjectIcons/9.png"
+      },
+      {
+        "SubjectID": 12,
+        "SubjectName": "Class 2",
+        "ClassID": 2,
+        "SubjectIcon": "SubjectIcons/12.png"
+      },
+      {
+        "SubjectID": 3,
+        "SubjectName": "Class 2",
+        "ClassID": 2,
+        "SubjectIcon": "SubjectIcons/3.png"
+      },
+      {
+        "SubjectID": 5,
+        "SubjectName": "Class 2",
+        "ClassID": 2,
+        "SubjectIcon": "SubjectIcons/5.png"
+      },
+      {
+        "SubjectID": 36,
+        "SubjectName": "Class 2",
+        "ClassID": 2,
+        "SubjectIcon": "SubjectIcons/36.png"
+      },
+      {
+        "SubjectID": 16,
+        "SubjectName": "Class 2",
+        "ClassID": 2,
+        "SubjectIcon": "SubjectIcons/16.png"
+      },
+      {
+        "SubjectID": 12,
+        "SubjectName": "Class 3",
+        "ClassID": 3,
+        "SubjectIcon": "SubjectIcons/12.png"
+      },
+      {
+        "SubjectID": 9,
+        "SubjectName": "Class 3",
+        "ClassID": 3,
+        "SubjectIcon": "SubjectIcons/9.png"
+      },
+      {
+        "SubjectID": 3,
+        "SubjectName": "Class 3",
+        "ClassID": 3,
+        "SubjectIcon": "SubjectIcons/3.png"
+      },
+      {
+        "SubjectID": 5,
+        "SubjectName": "Class 3",
+        "ClassID": 3,
+        "SubjectIcon": "SubjectIcons/5.png"
+      },
+      {
+        "SubjectID": 36,
+        "SubjectName": "Class 3",
+        "ClassID": 3,
+        "SubjectIcon": "SubjectIcons/36.png"
+      },
+      {
+        "SubjectID": 16,
+        "SubjectName": "Class 3",
+        "ClassID": 3,
+        "SubjectIcon": "SubjectIcons/16.png"
+      },
+      {
+        "SubjectID": 12,
+        "SubjectName": "Class 4",
+        "ClassID": 4,
+        "SubjectIcon": "SubjectIcons/12.png"
+      },
+      {
+        "SubjectID": 9,
+        "SubjectName": "Class 4",
+        "ClassID": 4,
+        "SubjectIcon": "SubjectIcons/9.png"
+      },
+      {
+        "SubjectID": 3,
+        "SubjectName": "Class 4",
+        "ClassID": 4,
+        "SubjectIcon": "SubjectIcons/3.png"
+      },
+      {
+        "SubjectID": 5,
+        "SubjectName": "Class 4",
+        "ClassID": 4,
+        "SubjectIcon": "SubjectIcons/5.png"
+      },
+      {
+        "SubjectID": 36,
+        "SubjectName": "Class 4",
+        "ClassID": 4,
+        "SubjectIcon": "SubjectIcons/36.png"
+      },
+      {
+        "SubjectID": 16,
+        "SubjectName": "Class 4",
+        "ClassID": 4,
+        "SubjectIcon": "SubjectIcons/16.png"
+      },
+      {
+        "SubjectID": 9,
+        "SubjectName": "Class 5",
+        "ClassID": 5,
+        "SubjectIcon": "SubjectIcons/9.png"
+      },
+      {
+        "SubjectID": 12,
+        "SubjectName": "Class 5",
+        "ClassID": 5,
+        "SubjectIcon": "SubjectIcons/12.png"
+      },
+      {
+        "SubjectID": 3,
+        "SubjectName": "Class 5",
+        "ClassID": 5,
+        "SubjectIcon": "SubjectIcons/3.png"
+      },
+      {
+        "SubjectID": 5,
+        "SubjectName": "Class 5",
+        "ClassID": 5,
+        "SubjectIcon": "SubjectIcons/5.png"
+      },
+      {
+        "SubjectID": 36,
+        "SubjectName": "Class 5",
+        "ClassID": 5,
+        "SubjectIcon": "SubjectIcons/36.png"
+      },
+      {
+        "SubjectID": 16,
+        "SubjectName": "Class 5",
+        "ClassID": 5,
+        "SubjectIcon": "SubjectIcons/16.png"
+      },
+      {
+        "SubjectID": 3,
+        "SubjectName": "Class 6",
+        "ClassID": 6,
+        "SubjectIcon": "SubjectIcons/3.png"
+      },
+      {
+        "SubjectID": 14,
+        "SubjectName": "Class 6",
+        "ClassID": 6,
+        "SubjectIcon": "SubjectIcons/14.png"
+      },
+      {
+        "SubjectID": 9,
+        "SubjectName": "Class 6",
+        "ClassID": 6,
+        "SubjectIcon": "SubjectIcons/9.png"
+      },
+      {
+        "SubjectID": 1,
+        "SubjectName": "Class 6",
+        "ClassID": 6,
+        "SubjectIcon": "SubjectIcons/1.png"
+      },
+      {
+        "SubjectID": 5,
+        "SubjectName": "Class 6",
+        "ClassID": 6,
+        "SubjectIcon": "SubjectIcons/5.png"
+      },
+      {
+        "SubjectID": 36,
+        "SubjectName": "Class 6",
+        "ClassID": 6,
+        "SubjectIcon": "SubjectIcons/36.png"
+      },
+      {
+        "SubjectID": 16,
+        "SubjectName": "Class 6",
+        "ClassID": 6,
+        "SubjectIcon": "SubjectIcons/16.png"
+      },
+      {
+        "SubjectID": 3,
+        "SubjectName": "Class 7",
+        "ClassID": 7,
+        "SubjectIcon": "SubjectIcons/3.png"
+      },
+      {
+        "SubjectID": 14,
+        "SubjectName": "Class 7",
+        "ClassID": 7,
+        "SubjectIcon": "SubjectIcons/14.png"
+      },
+      {
+        "SubjectID": 1,
+        "SubjectName": "Class 7",
+        "ClassID": 7,
+        "SubjectIcon": "SubjectIcons/1.png"
+      },
+      {
+        "SubjectID": 9,
+        "SubjectName": "Class 7",
+        "ClassID": 7,
+        "SubjectIcon": "SubjectIcons/9.png"
+      },
+      {
+        "SubjectID": 5,
+        "SubjectName": "Class 7",
+        "ClassID": 7,
+        "SubjectIcon": "SubjectIcons/5.png"
+      },
+      {
+        "SubjectID": 36,
+        "SubjectName": "Class 7",
+        "ClassID": 7,
+        "SubjectIcon": "SubjectIcons/36.png"
+      },
+      {
+        "SubjectID": 16,
+        "SubjectName": "Class 7",
+        "ClassID": 7,
+        "SubjectIcon": "SubjectIcons/16.png"
+      },
+      {
+        "SubjectID": 14,
+        "SubjectName": "Class 8",
+        "ClassID": 8,
+        "SubjectIcon": "SubjectIcons/14.png"
+      },
+      {
+        "SubjectID": 1,
+        "SubjectName": "Class 8",
+        "ClassID": 8,
+        "SubjectIcon": "SubjectIcons/1.png"
+      },
+      {
+        "SubjectID": 9,
+        "SubjectName": "Class 8",
+        "ClassID": 8,
+        "SubjectIcon": "SubjectIcons/9.png"
+      },
+      {
+        "SubjectID": 3,
+        "SubjectName": "Class 8",
+        "ClassID": 8,
+        "SubjectIcon": "SubjectIcons/3.png"
+      },
+      {
+        "SubjectID": 5,
+        "SubjectName": "Class 8",
+        "ClassID": 8,
+        "SubjectIcon": "SubjectIcons/5.png"
+      },
+      {
+        "SubjectID": 36,
+        "SubjectName": "Class 8",
+        "ClassID": 8,
+        "SubjectIcon": "SubjectIcons/36.png"
+      },
+      {
+        "SubjectID": 16,
+        "SubjectName": "Class 8",
+        "ClassID": 8,
+        "SubjectIcon": "SubjectIcons/16.png"
+      },
+      {
+        "SubjectID": 10,
+        "SubjectName": "Class 9",
+        "ClassID": 9,
+        "SubjectIcon": "SubjectIcons/10.png"
+      },
+      {
+        "SubjectID": 9,
+        "SubjectName": "Class 9",
+        "ClassID": 9,
+        "SubjectIcon": "SubjectIcons/9.png"
+      },
+      {
+        "SubjectID": 11,
+        "SubjectName": "Class 9",
+        "ClassID": 9,
+        "SubjectIcon": "SubjectIcons/11.png"
+      },
+      {
+        "SubjectID": 7,
+        "SubjectName": "Class 9",
+        "ClassID": 9,
+        "SubjectIcon": "SubjectIcons/7.png"
+      },
+      {
+        "SubjectID": 4,
+        "SubjectName": "Class 9",
+        "ClassID": 9,
+        "SubjectIcon": "SubjectIcons/4.png"
+      },
+      {
+        "SubjectID": 8,
+        "SubjectName": "Class 9",
+        "ClassID": 9,
+        "SubjectIcon": "SubjectIcons/8.png"
+      },
+      {
+        "SubjectID": 2,
+        "SubjectName": "Class 9",
+        "ClassID": 9,
+        "SubjectIcon": "SubjectIcons/2.png"
+      },
+      {
+        "SubjectID": 3,
+        "SubjectName": "Class 9",
+        "ClassID": 9,
+        "SubjectIcon": "SubjectIcons/3.png"
+      },
+      {
+        "SubjectID": 6,
+        "SubjectName": "Class 9",
+        "ClassID": 9,
+        "SubjectIcon": "SubjectIcons/6.png"
+      },
+      {
+        "SubjectID": 5,
+        "SubjectName": "Class 9",
+        "ClassID": 9,
+        "SubjectIcon": "SubjectIcons/5.png"
+      },
+      {
+        "SubjectID": 1,
+        "SubjectName": "Class 9",
+        "ClassID": 9,
+        "SubjectIcon": "SubjectIcons/1.png"
+      },
+      {
+        "SubjectID": 36,
+        "SubjectName": "Class 9",
+        "ClassID": 9,
+        "SubjectIcon": "SubjectIcons/36.png"
+      },
+      {
+        "SubjectID": 9,
+        "SubjectName": "Class 10",
+        "ClassID": 10,
+        "SubjectIcon": "SubjectIcons/9.png"
+      },
+      {
+        "SubjectID": 4,
+        "SubjectName": "Class 10",
+        "ClassID": 10,
+        "SubjectIcon": "SubjectIcons/4.png"
+      },
+      {
+        "SubjectID": 3,
+        "SubjectName": "Class 10",
+        "ClassID": 10,
+        "SubjectIcon": "SubjectIcons/3.png"
+      },
+      {
+        "SubjectID": 8,
+        "SubjectName": "Class 10",
+        "ClassID": 10,
+        "SubjectIcon": "SubjectIcons/8.png"
+      },
+      {
+        "SubjectID": 10,
+        "SubjectName": "Class 10",
+        "ClassID": 10,
+        "SubjectIcon": "SubjectIcons/10.png"
+      },
+      {
+        "SubjectID": 11,
+        "SubjectName": "Class 10",
+        "ClassID": 10,
+        "SubjectIcon": "SubjectIcons/11.png"
+      },
+      {
+        "SubjectID": 7,
+        "SubjectName": "Class 10",
+        "ClassID": 10,
+        "SubjectIcon": "SubjectIcons/7.png"
+      },
+      {
+        "SubjectID": 2,
+        "SubjectName": "Class 10",
+        "ClassID": 10,
+        "SubjectIcon": "SubjectIcons/2.png"
+      },
+      {
+        "SubjectID": 6,
+        "SubjectName": "Class 10",
+        "ClassID": 10,
+        "SubjectIcon": "SubjectIcons/6.png"
+      },
+      {
+        "SubjectID": 5,
+        "SubjectName": "Class 10",
+        "ClassID": 10,
+        "SubjectIcon": "SubjectIcons/5.png"
+      },
+      {
+        "SubjectID": 1,
+        "SubjectName": "Class 10",
+        "ClassID": 10,
+        "SubjectIcon": "SubjectIcons/1.png"
+      },
+      {
+        "SubjectID": 36,
+        "SubjectName": "Class 10",
+        "ClassID": 10,
+        "SubjectIcon": "SubjectIcons/36.png"
+      },
+      {
+        "SubjectID": 11,
+        "SubjectName": "Class 11",
+        "ClassID": 11,
+        "SubjectIcon": "SubjectIcons/11.png"
+      },
+      {
+        "SubjectID": 4,
+        "SubjectName": "Class 11",
+        "ClassID": 11,
+        "SubjectIcon": "SubjectIcons/4.png"
+      },
+      {
+        "SubjectID": 3,
+        "SubjectName": "Class 11",
+        "ClassID": 11,
+        "SubjectIcon": "SubjectIcons/3.png"
+      },
+      {
+        "SubjectID": 7,
+        "SubjectName": "Class 11",
+        "ClassID": 11,
+        "SubjectIcon": "SubjectIcons/7.png"
+      },
+      {
+        "SubjectID": 6,
+        "SubjectName": "Class 11",
+        "ClassID": 11,
+        "SubjectIcon": "SubjectIcons/6.png"
+      },
+      {
+        "SubjectID": 8,
+        "SubjectName": "Class 11",
+        "ClassID": 11,
+        "SubjectIcon": "SubjectIcons/8.png"
+      },
+      {
+        "SubjectID": 13,
+        "SubjectName": "Class 11",
+        "ClassID": 11,
+        "SubjectIcon": "SubjectIcons/13.png"
+      },
+      {
+        "SubjectID": 15,
+        "SubjectName": "Class 11",
+        "ClassID": 11,
+        "SubjectIcon": "SubjectIcons/15.png"
+      },
+      {
+        "SubjectID": 9,
+        "SubjectName": "Class 11",
+        "ClassID": 11,
+        "SubjectIcon": "SubjectIcons/9.png"
+      },
+      {
+        "SubjectID": 2,
+        "SubjectName": "Class 11",
+        "ClassID": 11,
+        "SubjectIcon": "SubjectIcons/2.png"
+      },
+      {
+        "SubjectID": 10,
+        "SubjectName": "Class 11",
+        "ClassID": 11,
+        "SubjectIcon": "SubjectIcons/10.png"
+      },
+      {
+        "SubjectID": 5,
+        "SubjectName": "Class 11",
+        "ClassID": 11,
+        "SubjectIcon": "SubjectIcons/5.png"
+      },
+      {
+        "SubjectID": 28,
+        "SubjectName": "Class 11",
+        "ClassID": 11,
+        "SubjectIcon": "SubjectIcons/28.png"
+      },
+      {
+        "SubjectID": 27,
+        "SubjectName": "Class 11",
+        "ClassID": 11,
+        "SubjectIcon": "SubjectIcons/27.png"
+      },
+      {
+        "SubjectID": 36,
+        "SubjectName": "Class 11",
+        "ClassID": 11,
+        "SubjectIcon": "SubjectIcons/36.png"
+      },
+      {
+        "SubjectID": 37,
+        "SubjectName": "Class 11",
+        "ClassID": 11,
+        "SubjectIcon": "SubjectIcons/37.png"
+      },
+      {
+        "SubjectID": 29,
+        "SubjectName": "Class 11",
+        "ClassID": 11,
+        "SubjectIcon": "SubjectIcons/29.png"
+      },
+      {
+        "SubjectID": 9,
+        "SubjectName": "Class 12",
+        "ClassID": 12,
+        "SubjectIcon": "SubjectIcons/9.png"
+      },
+      {
+        "SubjectID": 10,
+        "SubjectName": "Class 12",
+        "ClassID": 12,
+        "SubjectIcon": "SubjectIcons/10.png"
+      },
+      {
+        "SubjectID": 7,
+        "SubjectName": "Class 12",
+        "ClassID": 12,
+        "SubjectIcon": "SubjectIcons/7.png"
+      },
+      {
+        "SubjectID": 4,
+        "SubjectName": "Class 12",
+        "ClassID": 12,
+        "SubjectIcon": "SubjectIcons/4.png"
+      },
+      {
+        "SubjectID": 13,
+        "SubjectName": "Class 12",
+        "ClassID": 12,
+        "SubjectIcon": "SubjectIcons/13.png"
+      },
+      {
+        "SubjectID": 15,
+        "SubjectName": "Class 12",
+        "ClassID": 12,
+        "SubjectIcon": "SubjectIcons/15.png"
+      },
+      {
+        "SubjectID": 2,
+        "SubjectName": "Class 12",
+        "ClassID": 12,
+        "SubjectIcon": "SubjectIcons/2.png"
+      },
+      {
+        "SubjectID": 3,
+        "SubjectName": "Class 12",
+        "ClassID": 12,
+        "SubjectIcon": "SubjectIcons/3.png"
+      },
+      {
+        "SubjectID": 6,
+        "SubjectName": "Class 12",
+        "ClassID": 12,
+        "SubjectIcon": "SubjectIcons/6.png"
+      },
+      {
+        "SubjectID": 11,
+        "SubjectName": "Class 12",
+        "ClassID": 12,
+        "SubjectIcon": "SubjectIcons/11.png"
+      },
+      {
+        "SubjectID": 8,
+        "SubjectName": "Class 12",
+        "ClassID": 12,
+        "SubjectIcon": "SubjectIcons/8.png"
+      },
+      {
+        "SubjectID": 5,
+        "SubjectName": "Class 12",
+        "ClassID": 12,
+        "SubjectIcon": "SubjectIcons/5.png"
+      },
+      {
+        "SubjectID": 28,
+        "SubjectName": "Class 12",
+        "ClassID": 12,
+        "SubjectIcon": "SubjectIcons/28.png"
+      },
+      {
+        "SubjectID": 27,
+        "SubjectName": "Class 12",
+        "ClassID": 12,
+        "SubjectIcon": "SubjectIcons/27.png"
+      },
+      {
+        "SubjectID": 36,
+        "SubjectName": "Class 12",
+        "ClassID": 12,
+        "SubjectIcon": "SubjectIcons/36.png"
+      },
+      {
+        "SubjectID": 37,
+        "SubjectName": "Class 12",
+        "ClassID": 12,
+        "SubjectIcon": "SubjectIcons/37.png"
+      },
+      {
+        "SubjectID": 29,
+        "SubjectName": "Class 12",
+        "ClassID": 12,
+        "SubjectIcon": "SubjectIcons/29.png"
+      },
+      {
+        "SubjectID": 3,
+        "SubjectName": "KG",
+        "ClassID": 13,
+        "SubjectIcon": "SubjectIcons/3.png"
+      },
+      {
+        "SubjectID": 9,
+        "SubjectName": "KG",
+        "ClassID": 13,
+        "SubjectIcon": "SubjectIcons/9.png"
+      },
+      {
+        "SubjectID": 5,
+        "SubjectName": "KG",
+        "ClassID": 13,
+        "SubjectIcon": "SubjectIcons/5.png"
+      },
+      {
+        "SubjectID": 12,
+        "SubjectName": "KG",
+        "ClassID": 13,
+        "SubjectIcon": "SubjectIcons/12.png"
+      },
+      {
+        "SubjectID": 46,
+        "SubjectName": "KG",
+        "ClassID": 13,
+        "SubjectIcon": "SubjectIcons/46.png"
+      },
+      {
+        "SubjectID": 39,
+        "SubjectName": "KG",
+        "ClassID": 13,
+        "SubjectIcon": "SubjectIcons/39.png"
+      },
+      {
+        "SubjectID": 43,
+        "SubjectName": "KG",
+        "ClassID": 13,
+        "SubjectIcon": "SubjectIcons/43.png"
+      },
+      {
+        "SubjectID": 44,
+        "SubjectName": "KG",
+        "ClassID": 13,
+        "SubjectIcon": "SubjectIcons/44.png"
+      },
+      {
+        "SubjectID": 45,
+        "SubjectName": "KG",
+        "ClassID": 13,
+        "SubjectIcon": "SubjectIcons/45.png"
+      },
+      {
+        "SubjectID": 41,
+        "SubjectName": "KG",
+        "ClassID": 13,
+        "SubjectIcon": "SubjectIcons/41.png"
+      },
+      {
+        "SubjectID": 40,
+        "SubjectName": "KG",
+        "ClassID": 13,
+        "SubjectIcon": "SubjectIcons/40.png"
+      },
+      {
+        "SubjectID": 48,
+        "SubjectName": "KG",
+        "ClassID": 13,
+        "SubjectIcon": "SubjectIcons/48.png"
+      },
+      {
+        "SubjectID": 42,
+        "SubjectName": "KG",
+        "ClassID": 13,
+        "SubjectIcon": "SubjectIcons/42.png"
+      },
+      {
+        "SubjectID": 47,
+        "SubjectName": "KG",
+        "ClassID": 13,
+        "SubjectIcon": "SubjectIcons/47.png"
+      },
+      {
+        "SubjectID": 18,
+        "SubjectName": "KG",
+        "ClassID": 13,
+        "SubjectIcon": "SubjectIcons/18.png"
+      },
+      {
+        "SubjectID": 52,
+        "SubjectName": "KG",
+        "ClassID": 13,
+        "SubjectIcon": "SubjectIcons/52.png"
+      },
+      {
+        "SubjectID": 3,
+        "SubjectName": "Nursery",
+        "ClassID": 14,
+        "SubjectIcon": "SubjectIcons/3.png"
+      },
+      {
+        "SubjectID": 9,
+        "SubjectName": "Nursery",
+        "ClassID": 14,
+        "SubjectIcon": "SubjectIcons/9.png"
+      },
+      {
+        "SubjectID": 5,
+        "SubjectName": "Nursery",
+        "ClassID": 14,
+        "SubjectIcon": "SubjectIcons/5.png"
+      },
+      {
+        "SubjectID": 12,
+        "SubjectName": "Nursery",
+        "ClassID": 14,
+        "SubjectIcon": "SubjectIcons/12.png"
+      },
+      {
+        "SubjectID": 46,
+        "SubjectName": "Nursery",
+        "ClassID": 14,
+        "SubjectIcon": "SubjectIcons/46.png"
+      },
+      {
+        "SubjectID": 39,
+        "SubjectName": "Nursery",
+        "ClassID": 14,
+        "SubjectIcon": "SubjectIcons/39.png"
+      },
+      {
+        "SubjectID": 43,
+        "SubjectName": "Nursery",
+        "ClassID": 14,
+        "SubjectIcon": "SubjectIcons/43.png"
+      },
+      {
+        "SubjectID": 44,
+        "SubjectName": "Nursery",
+        "ClassID": 14,
+        "SubjectIcon": "SubjectIcons/44.png"
+      },
+      {
+        "SubjectID": 45,
+        "SubjectName": "Nursery",
+        "ClassID": 14,
+        "SubjectIcon": "SubjectIcons/45.png"
+      },
+      {
+        "SubjectID": 41,
+        "SubjectName": "Nursery",
+        "ClassID": 14,
+        "SubjectIcon": "SubjectIcons/41.png"
+      },
+      {
+        "SubjectID": 40,
+        "SubjectName": "Nursery",
+        "ClassID": 14,
+        "SubjectIcon": "SubjectIcons/40.png"
+      },
+      {
+        "SubjectID": 48,
+        "SubjectName": "Nursery",
+        "ClassID": 14,
+        "SubjectIcon": "SubjectIcons/48.png"
+      },
+      {
+        "SubjectID": 42,
+        "SubjectName": "Nursery",
+        "ClassID": 14,
+        "SubjectIcon": "SubjectIcons/42.png"
+      },
+      {
+        "SubjectID": 47,
+        "SubjectName": "Nursery",
+        "ClassID": 14,
+        "SubjectIcon": "SubjectIcons/47.png"
+      },
+      {
+        "SubjectID": 18,
+        "SubjectName": "Nursery",
+        "ClassID": 14,
+        "SubjectIcon": "SubjectIcons/18.png"
+      },
+      {
+        "SubjectID": 52,
+        "SubjectName": "Nursery",
+        "ClassID": 14,
+        "SubjectIcon": "SubjectIcons/52.png"
+      },
+      {
+        "SubjectID": 5,
+        "SubjectName": "Pre Nursery",
+        "ClassID": 15,
+        "SubjectIcon": "SubjectIcons/5.png"
+      },
+      {
+        "SubjectID": 9,
+        "SubjectName": "Pre Nursery",
+        "ClassID": 15,
+        "SubjectIcon": "SubjectIcons/9.png"
+      },
+      {
+        "SubjectID": 3,
+        "SubjectName": "Pre Nursery",
+        "ClassID": 15,
+        "SubjectIcon": "SubjectIcons/3.png"
+      },
+      {
+        "SubjectID": 46,
+        "SubjectName": "Pre Nursery",
+        "ClassID": 15,
+        "SubjectIcon": "SubjectIcons/46.png"
+      },
+      {
+        "SubjectID": 39,
+        "SubjectName": "Pre Nursery",
+        "ClassID": 15,
+        "SubjectIcon": "SubjectIcons/39.png"
+      },
+      {
+        "SubjectID": 43,
+        "SubjectName": "Pre Nursery",
+        "ClassID": 15,
+        "SubjectIcon": "SubjectIcons/43.png"
+      },
+      {
+        "SubjectID": 44,
+        "SubjectName": "Pre Nursery",
+        "ClassID": 15,
+        "SubjectIcon": "SubjectIcons/44.png"
+      },
+      {
+        "SubjectID": 45,
+        "SubjectName": "Pre Nursery",
+        "ClassID": 15,
+        "SubjectIcon": "SubjectIcons/45.png"
+      },
+      {
+        "SubjectID": 41,
+        "SubjectName": "Pre Nursery",
+        "ClassID": 15,
+        "SubjectIcon": "SubjectIcons/41.png"
+      },
+      {
+        "SubjectID": 40,
+        "SubjectName": "Pre Nursery",
+        "ClassID": 15,
+        "SubjectIcon": "SubjectIcons/40.png"
+      },
+      {
+        "SubjectID": 48,
+        "SubjectName": "Pre Nursery",
+        "ClassID": 15,
+        "SubjectIcon": "SubjectIcons/48.png"
+      },
+      {
+        "SubjectID": 42,
+        "SubjectName": "Pre Nursery",
+        "ClassID": 15,
+        "SubjectIcon": "SubjectIcons/42.png"
+      },
+      {
+        "SubjectID": 47,
+        "SubjectName": "Pre Nursery",
+        "ClassID": 15,
+        "SubjectIcon": "SubjectIcons/47.png"
+      },
+      {
+        "SubjectID": 18,
+        "SubjectName": "Pre Nursery",
+        "ClassID": 15,
+        "SubjectIcon": "SubjectIcons/18.png"
+      },
+      {
+        "SubjectID": 52,
+        "SubjectName": "Pre Nursery",
+        "ClassID": 15,
+        "SubjectIcon": "SubjectIcons/52.png"
+      }
+    ]
+  }

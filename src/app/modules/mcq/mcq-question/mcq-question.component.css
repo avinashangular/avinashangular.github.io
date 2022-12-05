@@ -1,0 +1,22 @@
+.option {
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #a8b1bd;
+    text-align: left;    
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrong-option {
+    border: 1px solid #e70013;
+}
+
+.right-option {
+    border: 1px solid #023473;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,8 +1,10 @@
 <mat-toolbar>
-  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
-    <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
-    <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
-  </button>
+ 
+    <button mat-icon-button *ngIf="sidenav.mode === 'over' && sideNavVisible" (click)="sidenav.toggle()">
+      <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
+      <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
+    </button>
+
   <div class="lms-right-menu">
     <mat-icon>notifications</mat-icon>
     <mat-icon>power_settings_new</mat-icon>
@@ -10,11 +12,12 @@
 </mat-toolbar>
 
 <mat-sidenav-container>  
+  
     <mat-sidenav #sidenav="matSidenav">
     <div>
       <img class="img-thumbnail" src="assets/images/logo.png" alt="logo" />
       <mat-divider></mat-divider>
-      <button mat-button class="menu-button">
+      <button  mat-button class="menu-button">
         <mat-icon>home</mat-icon>
         <span>Home</span>
       </button>
@@ -37,8 +40,7 @@
         <span>Help</span>
       </button>
     </div>
-    </mat-sidenav>
-  
+    </mat-sidenav> 
     <mat-sidenav-content>
        <router-outlet></router-outlet>
     </mat-sidenav-content>
