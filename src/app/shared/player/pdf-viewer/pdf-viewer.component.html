@@ -1,0 +1,16 @@
+<div class="video-player-container">
+    <!-- <pdf-viewer [src]="pdfpath"  [render-text]="false"  [original-size]="true" [zoom]="zoom" 
+     (after-load-complete)="callBackFn($event)" (page-rendered)="pageRendered($event)"
+      (error)="onError($event)" (on-progress)="onProgress($event)" class="pdfviewer1"
+    ></pdf-viewer> -->
+    <lms-header Heading="Content Name"></lms-header>
+    <pdf-viewer [src]="pdfpath"
+                [render-text]="false"
+                [zoom]="0.8"
+                [original-size]="true"
+                [zoom-scale]='"page-height"'
+                [fit-to-page]="false"
+                [show-borders]="true"
+                [show-all]="true"
+  ></pdf-viewer>
+  </div>

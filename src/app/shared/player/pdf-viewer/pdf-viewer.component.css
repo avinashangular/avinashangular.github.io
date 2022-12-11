@@ -1,0 +1,7 @@
+pdf-viewer {
+    width: 100%;
+    height: calc(100vh - 220px);
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #023473;
+}

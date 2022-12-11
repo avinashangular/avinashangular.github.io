@@ -345,6 +345,18 @@ mat-sidenav {
     font-size: 14px;
 }
 
+.view-content {
+    text-align: center;
+}
+
+.view-content.content-bg{
+    height: calc(100vh - 98px);
+}
+.video-player-container .lms-heading {
+    margin: 0;
+    margin-left: 0;
+}
+
 @media screen and (max-width: 800px) {
     .content-bg {
         margin-left: 16px;

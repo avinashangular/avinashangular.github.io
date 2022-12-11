@@ -1,0 +1,12 @@
+<div class="video-player-container">
+<lms-header Heading="Content Name"></lms-header>
+<video id="vdPlayer"  #vdPlayer
+  disablePictureInPicture  controlsList="nodownload" 
+  autoplay  controls 
+  (loadeddata) ="loadeddata($event)" 
+  (progress)="onprogress($event)"  (error)="onError($event)">
+    <source src="{{videourl}}" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  
+</div>

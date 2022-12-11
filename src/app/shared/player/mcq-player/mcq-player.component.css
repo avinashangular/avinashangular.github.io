@@ -1,0 +1,14 @@
+.mcq {
+    min-height: calc(100vh - 180px);
+    margin-bottom: 10px;
+    border-bottom: 2px solid #023473;
+}
+.mcq h5 {
+    color: #e70013;
+    line-height: 32px;
+}
+
+.mcq p {
+    color: #023473;
+    line-height: 28px;
+}

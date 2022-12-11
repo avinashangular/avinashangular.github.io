@@ -20,13 +20,16 @@ import { AccordionModule } from 'primeng/accordion';
 import { ContentComponent } from './core/content/content.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
+import { ViewContentComponent } from './core/view-content/view-content.component';
+import { PlayerModule } from './shared/player/player.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     CourseComponent,
     TableOfContentComponent,
-    ContentComponent
+    ContentComponent,
+    ViewContentComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +45,7 @@ import { SharedModule } from './shared/shared.module';
     PanelModule,
     AccordionModule,
     HttpClientModule,
+    PlayerModule,
     SharedModule
   ],
   providers: [{provide : LocationStrategy , useClass: HashLocationStrategy}],
