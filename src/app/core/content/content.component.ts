@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TocService } from '../toc.service';
 
 @Component({
@@ -11,7 +12,8 @@ export class ContentComponent implements OnInit {
   constentList:any[]=[];
 
   constructor(
-    private tocService: TocService
+    private tocService: TocService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -21,6 +23,12 @@ export class ContentComponent implements OnInit {
         this.constentList = data;
       }
     });
+  }
+
+  viewContent(contentId:number) {
+    console.log('-----', contentId);
+    this.tocService.selectedContentIdSubject.next(contentId);
+    this.router.navigateByUrl('/view-content');
   }
 
 }
