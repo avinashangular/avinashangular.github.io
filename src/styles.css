@@ -8,6 +8,26 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
     background-size: cover; */
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #023473; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #023473; 
+  }
+
 .btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #023473;
@@ -351,6 +371,7 @@ mat-sidenav {
 
 .view-content.content-bg{
     height: calc(100vh - 98px);
+    overflow: hidden;
 }
 .video-player-container .lms-heading {
     margin: 0;

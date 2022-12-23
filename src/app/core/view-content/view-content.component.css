@@ -3,3 +3,27 @@
     display: flex;
     justify-content: space-between;
 }
+
+a {
+    text-decoration: none;
+}
+.toc {
+    padding-top: 20px;
+    overflow-y: auto;
+    height: calc(100vh - 98px);
+}
+.description {
+    flex-grow: 1;
+    width: 0;
+    overflow: hidden;
+    height: 24px;
+    text-align: left;
+}
+
+.description h4 {
+    border-bottom: none;
+}
+
+.content-item {
+    margin-bottom: 10px;
+}

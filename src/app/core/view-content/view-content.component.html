@@ -5,12 +5,50 @@
                     <lms-player></lms-player>
                     <div class="navigation">
                         <button type="button" class="btn btn-primary" >Previous</button>
-                        <button  type="button" class="btn btn-warning">Close</button>
+                        <button  type="button" routerLink="/content" class="btn btn-warning">Close</button>
                         <button  type="button" class="btn btn-primary">Next</button>
                     </div>
                 </div> 
-                <div class="col-lg-4 padding-right-0 filter">                
-                   
+                <div class="col-lg-4 padding-right-0 filter toc">                
+                    <div *ngFor="let content of constentList">
+                        <a routerLink="/view-content">
+                            <div class="content-item">
+                                <div class="play-button">
+                                    <img *ngIf="content.mediatype == 'mp4'" src="assets/images/play-64.png" alt="play">
+                                    <img *ngIf="content.mediatype == 'html'" src="assets/images/html.png" alt="html">
+                                </div>
+                                <div class="description">
+                                    <h4>{{content.displayname}}</h4>
+                                   </div>                        
+                            </div>
+                        </a>
+                    </div>
+                    <div *ngFor="let content of constentList">
+                        <a routerLink="/view-content">
+                            <div class="content-item">
+                                <div class="play-button">
+                                    <img *ngIf="content.mediatype == 'mp4'" src="assets/images/play-64.png" alt="play">
+                                    <img *ngIf="content.mediatype == 'html'" src="assets/images/html.png" alt="html">
+                                </div>
+                                <div class="description">
+                                    <h4>{{content.displayname}}</h4>
+                                   </div>                        
+                            </div>
+                        </a>
+                    </div>
+                    <div *ngFor="let content of constentList">
+                        <a routerLink="/view-content">
+                            <div class="content-item">
+                                <div class="play-button">
+                                    <img *ngIf="content.mediatype == 'mp4'" src="assets/images/play-64.png" alt="play">
+                                    <img *ngIf="content.mediatype == 'html'" src="assets/images/html.png" alt="html">
+                                </div>
+                                <div class="description">
+                                    <h4>{{content.displayname}}</h4>
+                                   </div>                        
+                            </div>
+                        </a>
+                    </div>
                 </div>                       
             </div>
           </div>
