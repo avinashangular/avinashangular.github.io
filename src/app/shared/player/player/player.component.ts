@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'lms-player',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayerComponent implements OnInit {
 
+  @Input('PlayerConfig') playerConfig:IPlayerConfig | undefined;
+
   videoUrl = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'
 
   constructor() { }
@@ -14,4 +16,10 @@ export class PlayerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+}
+
+
+export interface IPlayerConfig {
+  playerType: "VIDEO" | "MCQ" | "PDF" | "HTML",
+  options:any;
 }

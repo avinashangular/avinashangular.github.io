@@ -1,17 +1,19 @@
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
-
+import { MasterPlayer } from '../master-player';
 
 @Component({
   selector: 'lms-video-player',
   templateUrl: './video-player.component.html',
   styleUrls: ['./video-player.component.css']
 })
-export class VideoPlayerComponent implements OnInit {
+export class VideoPlayerComponent extends MasterPlayer implements OnInit {
 
-  @Input('VideoURL') videourl:string | undefined;
+
   @ViewChild('vdPlayer') vidPlayer:ElementRef | undefined;
-
-  constructor() { }
+  videourl:string|undefined;
+  constructor() {
+    super();
+   }
 
   ngOnInit(): void {
   }

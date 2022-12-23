@@ -1,5 +1,11 @@
-<lms-video-player [VideoURL]="videoUrl"></lms-video-player>
+<lms-video-player *ngIf="playerConfig && playerConfig.playerType == 'VIDEO'" 
+    [PlayOption]="playerConfig && playerConfig.options">
+</lms-video-player>
 
-<!-- <lms-pdf-viewer></lms-pdf-viewer> -->
+<lms-pdf-viewer  *ngIf="playerConfig && playerConfig.playerType == 'PDF'"
+    [PlayOption]="playerConfig && playerConfig.options">
+</lms-pdf-viewer>
 
-<!-- <lms-mcq-player></lms-mcq-player> -->
+<lms-mcq-player  *ngIf="playerConfig && playerConfig.playerType == 'MCQ'" 
+    [PlayOption]="playerConfig && playerConfig.options">
+</lms-mcq-player>

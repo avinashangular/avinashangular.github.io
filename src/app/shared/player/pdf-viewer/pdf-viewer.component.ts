@@ -1,17 +1,20 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MasterPlayer } from '../master-player';
 
 @Component({
   selector: 'lms-pdf-viewer',
   templateUrl: './pdf-viewer.component.html',
   styleUrls: ['./pdf-viewer.component.css']
 })
-export class PdfViewerComponent implements OnInit {
+export class PdfViewerComponent  extends MasterPlayer  implements OnInit {
 
   @Input() pdfpath: string = 'assets/sample.pdf';
   @Input() zoom: number = 0;
   numofpages:number = 1;
 
-  constructor() { }
+  constructor() {
+    super();
+  }
 
   ngOnInit(): void {
   }
