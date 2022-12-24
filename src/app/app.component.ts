@@ -17,7 +17,6 @@ export class AppComponent {
    constructor(private observer: BreakpointObserver, private router: Router) {
     // router.events.subscribe((event) => {
     //   if(event instanceof NavigationStart) {
-    //     console.log(event);
     //     if(event.url.includes('/mcq')) {         
     //       this.sidenav.opened = false; 
     //       this.sideNavVisible = false;         

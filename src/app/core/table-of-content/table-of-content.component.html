@@ -12,7 +12,7 @@
                             [(ngModel)]="selectedClass"
                             [suggestions]="filteredClass" 
                             (completeMethod)="filterClass($event)" 
-                            (onSelect)="onClassSelect($event)"
+                            (onSelect)="onClassSelect($event.classid)"
                             field="classname" 
                             [dropdown]="isDropdown">
                             <ng-template let-class pTemplate="item">
@@ -29,7 +29,7 @@
                     [(ngModel)]="selectedSubject" 
                     [suggestions]="filteredSubject" 
                     (completeMethod)="filterSubject($event)" 
-                    (onSelect)="onSubjectSelect($event)"
+                    (onSelect)="onSubjectSelect($event.SubjectID)"
                     field="SubjectName" 
                     [dropdown]="isDropdown">
                     <ng-template let-subject pTemplate="item">
@@ -46,7 +46,7 @@
                     [(ngModel)]="selectedBook" 
                     [suggestions]="filteredBooks" 
                     (completeMethod)="filterBook($event)" 
-                    (onSelect)="onBookSelect($event)"
+                    (onSelect)="onBookSelect($event.bookid)"
                     field="bookname" 
                     [dropdown]="isDropdown">
                     <ng-template let-book pTemplate="item">
@@ -60,19 +60,29 @@
             </div>
           <div class="col-lg-9 order-lg-12 padding-left-0">
             <p-panel header="Chapters">
+                <ng-container *ngIf="filteredChapter && filteredChapter.length > 0; else noItem">
                 <p-accordion>
                     <ng-container *ngFor="let chapter of filteredChapter">
                     <p-accordionTab [header]="chapter.ChapterName">
                       <div class="lms-topic">
                         <ng-container *ngFor="let topic of getTopics(chapter.chapterid)">
-                            <a routerLink="/content">{{topic.topicName}}</a>
+                            <a (click)="navigateTocontent(topic.topicid)">{{topic.topicName}}</a>
                         </ng-container>
                       </div>
                     </p-accordionTab>
                 </ng-container>
                 </p-accordion>
+            </ng-container>
             </p-panel>
           </div>          
         </div>
       </div>
 </div>
+
+<ng-template #noItem>
+    <div class="no-item">
+        <img src="assets/images/book_icon.png"/>
+    <h5>No items to display.</h5>
+    <p>Please select class, subject and book</p>
+</div>
+</ng-template>

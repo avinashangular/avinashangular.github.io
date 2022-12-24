@@ -4,21 +4,31 @@
 <div class="content-bg content-top-margin toc">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6" *ngFor="let content of constentList">
-                <a (click)="viewContent(content.contentid)">
-                    <div class="content-item">
-                        <div class="play-button">
-                            <img *ngIf="content.mediatype == 'mp4'" src="assets/images/play-64.png" alt="play">
-                            <img *ngIf="content.mediatype == 'html'" src="assets/images/html.png" alt="html">
+            <ng-container *ngIf="constentList && constentList.length > 0; else noItem">
+                <div class="col-lg-6" *ngFor="let content of constentList">
+                    <a (click)="viewContent(content.contentid)">
+                        <div class="content-item">
+                            <div class="play-button">
+                                <img *ngIf="content.mediatype == 'mp4'" src="assets/images/play-64.png" alt="play">
+                                <img *ngIf="content.mediatype == 'html'" src="assets/images/html.png" alt="html">
+                            </div>
+                            <div class="description">
+                                <h4>{{content.displayname}}</h4>
+                                <p>Social Sciences can be defined as the study of human society</p>
+                            </div>                        
                         </div>
-                        <div class="description">
-                            <h4>{{content.displayname}}</h4>
-                            <p>Social Sciences can be defined as the study of human society</p>
-                        </div>                        
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
+            </ng-container>
         </div>
     </div>
 </div>
+
+<ng-template #noItem>
+    <div class="no-item">
+        <img src="assets/images/book.gif"/>
+    <h5>Please wait...</h5>
+    <p>Loading right content for your bright future.</p>
+</div>
+</ng-template>
             

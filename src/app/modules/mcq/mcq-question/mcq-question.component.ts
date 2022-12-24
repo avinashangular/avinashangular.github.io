@@ -34,7 +34,6 @@ export class McqQuestionComponent implements OnInit {
         return _question;
       });
       this.getQuestionByIndex(this.currentQuestionIndex);  
-      console.log(this.currentQuestion);
     });
   }
 

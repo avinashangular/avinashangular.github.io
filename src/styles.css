@@ -369,6 +369,11 @@ mat-sidenav {
     text-align: center;
 }
 
+.view-content .lms-heading {
+    margin: 0;
+    margin-left: 0;
+}
+
 .view-content.content-bg{
     height: calc(100vh - 98px);
     overflow: hidden;
@@ -376,6 +381,19 @@ mat-sidenav {
 .video-player-container .lms-heading {
     margin: 0;
     margin-left: 0;
+}
+
+.no-item {
+    height: calc(100vh - 242px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.6;
+}
+
+.no-item img {
+    width: 100px;
 }
 
 @media screen and (max-width: 800px) {

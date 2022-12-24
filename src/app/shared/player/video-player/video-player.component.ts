@@ -10,7 +10,8 @@ export class VideoPlayerComponent extends MasterPlayer implements OnInit {
 
 
   @ViewChild('vdPlayer') vidPlayer:ElementRef | undefined;
-  videourl:string|undefined;
+  videourl:string|undefined = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4';
+   
   constructor() {
     super();
    }
@@ -43,11 +44,9 @@ export class VideoPlayerComponent extends MasterPlayer implements OnInit {
    // this._ngxspinner.hide();
     // this._service.updateContentUsageLog(this.logId)
     // .subscribe(data => {
-    //   //console.log(data);
       
     // })
     // , (error)=> { const errormsg = this._error.logError(error); };
-    //console.log('exit');
   }
 
   loadvideoandplay()

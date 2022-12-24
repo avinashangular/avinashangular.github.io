@@ -45,11 +45,9 @@ export class PdfViewerComponent  extends MasterPlayer  implements OnInit {
     // this._ngxspinner.hide();
     // this._service.updateContentUsageLog(this.logId)
     // .subscribe(data => {
-    //   //console.log(data);
       
     // })
     // , (error)=> { const errormsg = this._error.logError(error); };
-    //console.log('exit');
   }
 
 }

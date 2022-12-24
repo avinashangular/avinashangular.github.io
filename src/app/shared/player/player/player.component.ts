@@ -1,25 +1,28 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { LMSPlayerType } from 'src/app/lmsConstraint/lmsConstraint';
 
 @Component({
   selector: 'lms-player',
   templateUrl: './player.component.html',
   styleUrls: ['./player.component.css']
 })
-export class PlayerComponent implements OnInit {
+export class PlayerComponent implements OnInit, OnChanges {
 
   @Input('PlayerConfig') playerConfig:IPlayerConfig | undefined;
-
-  videoUrl = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'
 
   constructor() { }
 
   ngOnInit(): void {
+    
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
   }
 
 }
 
 
 export interface IPlayerConfig {
-  playerType: "VIDEO" | "MCQ" | "PDF" | "HTML",
+  playerType: LMSPlayerType,
   options:any;
 }

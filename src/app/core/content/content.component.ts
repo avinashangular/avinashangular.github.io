@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { lmsSessionManager } from 'src/app/lmSession/sesstionManager';
 import { TocService } from '../toc.service';
 
 @Component({
@@ -13,21 +14,21 @@ export class ContentComponent implements OnInit {
 
   constructor(
     private tocService: TocService,
-    private router: Router
+    private router: Router,
+    private lmsSesstion: lmsSessionManager
   ) { }
 
-  ngOnInit(): void {
-    this.tocService.getContentByTopic(1).subscribe((data:any)=>{
+  async ngOnInit(): Promise<void> {
+    const topicId = await this.tocService.getTopicId();
+    this.tocService.getContentByTopic(topicId).subscribe((data:any)=>{
       if (data) {
-        console.log(data);
         this.constentList = data;
       }
     });
   }
 
   viewContent(contentId:number) {
-    console.log('-----', contentId);
-    this.tocService.selectedContentIdSubject.next(contentId);
+    this.tocService.setContentId(1, true);
     this.router.navigateByUrl('/view-content');
   }
 

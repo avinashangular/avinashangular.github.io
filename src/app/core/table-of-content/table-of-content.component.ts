@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { LMSSessionName } from 'src/app/lmsConstraint/lmsConstraint';
+import { lmsSessionManager } from 'src/app/lmSession/sesstionManager';
 import { TocService } from '../toc.service';
 
 @Component({
@@ -33,36 +36,72 @@ export class TableOfContentComponent implements OnInit {
   
 
   constructor(
-    private tocService: TocService
+    private tocService: TocService,
+    private lmsSession: lmsSessionManager,
+    private router: Router
   ) { }
 
-  ngOnInit(): void {
+ async ngOnInit(): Promise<void> {
     this.tocService.getClassAndSubject(1).subscribe((data:any)=>{
       this.classList = data['ClassCollection'];
       this.subjectListMaster = data['Subject'];
     });
+
+    const classId = this.tocService.getClassId(true);
+    if (classId) {
+     this.selectedClass = this.classList.filter((val:any) => {
+        if (val.classid == classId) {
+          this.onClassSelect(val.classid)
+          return true;
+        }
+        return false;
+      })[0];
+    }
+
+    const subjectId = this.tocService.getSubjectId(true);
+    if (subjectId) {
+      this.selectedSubject = this.subjectList.filter((val:any) => {
+        if (val.SubjectID == subjectId) {
+          this.onSubjectSelect(val.SubjectID)
+          return true;
+        }
+        return false;
+      })[0];
+    }
+
+    const bookId = this.tocService.getBookId(true);
+    if(bookId) {
+      this.selectedBook = this.bookList.filter((val:any) => {
+        if (val.bookid == bookId) {
+          this.onBookSelect(val.bookid);
+          return true;
+        }
+        return false;
+      })[0]
+    }
   }
 
-  onClassSelect(event:any) {
+  onClassSelect(classid:number) {
    this.subjectList = this.subjectListMaster.filter((subject:any)=> {
-      if(subject.ClassID == event.classid) {
+      if(subject.ClassID == classid) {
         return true;
       }
       return false;
     });
   }
 
-  onSubjectSelect(event:any) {
-    this.tocService.getBookChapterAndTopic(this.selectedClass.classid,event.SubjectID).subscribe((data:any)=>{
+  onSubjectSelect(SubjectID:number) {
+    this.tocService.getBookChapterAndTopic(this.selectedClass.classid,SubjectID).subscribe((data:any)=>{
       this.bookList = data.book;
       this.chapterList = data.chapter;
       this.topicList = data.topic;
     });
   }
 
-  onBookSelect(event:any){
+  onBookSelect(bookid:number){
+    this.tocService.setBookId(bookid, true);
     this.filteredChapter = this.chapterList.filter((chapter:any)=>{
-      if(chapter.bookid == event.bookid) {
+      if(chapter.bookid == bookid) {
         return true;
       }
       return false;
@@ -119,6 +158,12 @@ export class TableOfContentComponent implements OnInit {
     }
 
     this.filteredBooks = filtered;
+  }
+
+  navigateTocontent(topicId:number) {
+    //this.lmsSession.setSession(LMSSessionName.TOPIC_ID, 1);
+    this.tocService.setTopicId(1);
+    this.router.navigateByUrl('/content');
   }
 
 }

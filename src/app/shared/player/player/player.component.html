@@ -1,11 +1,21 @@
-<lms-video-player *ngIf="playerConfig && playerConfig.playerType == 'VIDEO'" 
+
+<ng-container [ngSwitch]="playerConfig?.playerType">
+<lms-video-player *ngSwitchCase="'VIDEO'"
     [PlayOption]="playerConfig && playerConfig.options">
 </lms-video-player>
 
-<lms-pdf-viewer  *ngIf="playerConfig && playerConfig.playerType == 'PDF'"
+<lms-pdf-viewer  *ngSwitchCase="'PDF'"
     [PlayOption]="playerConfig && playerConfig.options">
 </lms-pdf-viewer>
 
-<lms-mcq-player  *ngIf="playerConfig && playerConfig.playerType == 'MCQ'" 
+<lms-mcq-player  *ngSwitchCase="'MCQ'" 
     [PlayOption]="playerConfig && playerConfig.options">
 </lms-mcq-player>
+
+<div *ngSwitchCase="'NOPLAYER'">
+    <div class="no-item">
+    <h5>No player found for {{playerConfig?.options.mimetype}}</h5>
+    <p>Please report to administrator.</p>
+    </div>
+</div>
+</ng-container>

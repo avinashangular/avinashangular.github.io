@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LMSPlayerType } from 'src/app/lmsConstraint/lmsConstraint';
 import { IPlayerConfig } from 'src/app/shared/player/player/player.component';
 import { TocService } from '../toc.service';
 
@@ -11,47 +12,53 @@ export class ViewContentComponent implements OnInit {
 
   constentList:any[]=[];
   playerConfig:IPlayerConfig | undefined;
+  currentIndex = 0;
 
   constructor(
     private tocService: TocService
   ) { }
 
-  ngOnInit(): void {
-    this.tocService.selectedContentIdSubject.subscribe((contetId:number)=>{
-      if(contetId) {
-        console.log(contetId, this.tocService.contents);
-        this.constentList = this.tocService.contents;
-        const content = this.constentList.filter(content => {
-          return content.contentid == contetId ? content : null;
-        })?.[0];
+  async ngOnInit(): Promise<void> {    
+    
+    const topicId = await this.tocService.getTopicId();
+    if(topicId) {       
+      this.tocService.getContentByTopic(topicId).subscribe((contents:any) => {
+        this.constentList = contents;
+      });
+      const contentId = await this.tocService.getContentId();
+      const content = this.constentList.filter(content => content.contentid == contentId ? content : null)?.[0];
+      this.playerConfig = this.getPlayerConfig(content);
+    }
+  }
 
-        this.playerConfig = {
-          options : content,
-          playerType: this.getPlayerType(content.mimeType)
-        }
-
-        console.log('++++++', content);
-      }
-    });
-    // this.tocService.getContentByTopic(1).subscribe((data:any)=>{
-    //   if (data) {
-    //     console.log(data);
-    //     this.constentList = data;
-    //   }
-    // });
+  getPlayerConfig(content:any) {
+    return {
+      options : content,
+      playerType: this.getPlayerType(content.mimetype)
+    }
   }
 
   changeQuestion(stepName:'pre'|'next') {
-
+    this.currentIndex = this.constentList.findIndex((value, index) =>  value.contentid == this.playerConfig?.options.contentid)
+    if (stepName == 'next') {
+      if (this.currentIndex < this.constentList.length - 1) {
+        this.currentIndex++;        
+      }
+    } else if (stepName == 'pre') {
+      if (this.currentIndex > 0) {
+        this.currentIndex--;        
+      }
+    }
+    this.playerConfig = this.getPlayerConfig(this.constentList[this.currentIndex]);
   }
 
-  getPlayerType(mimeType:string) : "VIDEO" | "PDF" | "MCQ" {
+  getPlayerType(mimeType:string) : LMSPlayerType{
     switch(mimeType) {
-      case "video/mp4" : 
-        return 'VIDEO';
+      case 'video/mp4' : 
+        return LMSPlayerType.VIDEO;
         break;
       default :
-       return 'VIDEO';
+       return LMSPlayerType.NOPLAYER;
         break;
     }
   }
