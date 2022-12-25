@@ -108,7 +108,6 @@ export class TableOfContentComponent implements OnInit {
 
       if(this.tocService.getContentId(true) != SubjectID) {
         this.selectedBook = null;
-        this.topicList = [];
         this.filteredChapter = [];
         this.filteredBooks = [];
       }
