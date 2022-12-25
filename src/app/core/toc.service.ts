@@ -151,16 +151,20 @@ export class TocService {
   }
 
   getBookChapterAndTopic(classId:number, subjectId:number) {
-    if (this.tocClassSubject) {
-      return new Observable(observer => {
-        observer.next(this.tocClassSubject);
-        observer.complete();
-      });
-    } else if(this.lmsSession.getSesstion(LMSSessionName.TOC_BOOK_CHAPTER_TOPIC)) {
-      return new Observable(observer => {
-        observer.next(this.lmsSession.getSesstion(LMSSessionName.TOC_BOOK_CHAPTER_TOPIC));
-        observer.complete();
-      });
+    if (this.getClassId(true) == classId && this.getSubjectId(true) == subjectId) {
+      if (this.tocClassSubject) {
+        return new Observable(observer => {
+          observer.next(this.tocClassSubject);
+          observer.complete();
+        });
+      } else if(this.lmsSession.getSesstion(LMSSessionName.TOC_BOOK_CHAPTER_TOPIC)) {
+        return new Observable(observer => {
+          observer.next(this.lmsSession.getSesstion(LMSSessionName.TOC_BOOK_CHAPTER_TOPIC));
+          observer.complete();
+        });
+      } else {
+        return this._getBookChapterAndTopic(classId, subjectId);
+      }
     } else {
       return this._getBookChapterAndTopic(classId, subjectId);
     }

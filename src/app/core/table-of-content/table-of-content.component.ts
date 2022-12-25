@@ -69,6 +69,7 @@ export class TableOfContentComponent implements OnInit {
       })[0];
     }
 
+    debugger;
     const bookId = this.tocService.getBookId(true);
     if(bookId) {
       this.selectedBook = this.bookList.filter((val:any) => {
@@ -88,6 +89,15 @@ export class TableOfContentComponent implements OnInit {
       }
       return false;
     });
+
+    // reset subject and Book
+    if (this.tocService.getClassId(true) != classid) {
+      this.selectedSubject = null;
+      this.selectedBook = null;
+      this.topicList = [];
+      this.filteredChapter = [];
+      this.filteredBooks = [];
+    }
   }
 
   onSubjectSelect(SubjectID:number) {
@@ -122,13 +132,14 @@ export class TableOfContentComponent implements OnInit {
     let filtered : any[] = [];
     let query = event.query;
 
-    for(let i = 0; i < this.classList.length; i++) {
-        let classes:any = this.classList[i];
-        if (classes.classname.toLowerCase().indexOf(query.toLowerCase()) == 0) {
-            filtered.push(classes);
-        }
+    if(this.classList.length) {
+      for(let i = 0; i < this.classList.length; i++) {
+          let classes:any = this.classList[i];
+          if (classes.classname.toLowerCase().indexOf(query.toLowerCase()) == 0) {
+              filtered.push(classes);
+          }
+      }
     }
-
     this.filteredClass = filtered;
   }
 
@@ -136,13 +147,14 @@ export class TableOfContentComponent implements OnInit {
     let filtered : any[] = [];
     let query = event.query;
 
-    for(let i = 0; i < this.subjectList.length; i++) {
-        let subject = this.subjectList[i];
-        if (subject.SubjectName.toLowerCase().indexOf(query.toLowerCase()) == 0) {
-            filtered.push(subject);
-        }
+    if (this.subjectList.length) {
+      for(let i = 0; i < this.subjectList.length; i++) {
+          let subject = this.subjectList[i];
+          if (subject.SubjectName.toLowerCase().indexOf(query.toLowerCase()) == 0) {
+              filtered.push(subject);
+          }
+      }
     }
-
     this.filteredSubject = filtered;
   }
 
@@ -150,13 +162,14 @@ export class TableOfContentComponent implements OnInit {
     let filtered : any[] = [];
     let query = event.query;
 
-    for(let i = 0; i < this.bookList.length; i++) {
-        let book = this.bookList[i];
-        if (book.bookname.toLowerCase().indexOf(query.toLowerCase()) == 0) {
-            filtered.push(book);
-        }
+    if (this.bookList.length) {
+      for(let i = 0; i < this.bookList.length; i++) {
+          let book = this.bookList[i];
+          if (book.bookname.toLowerCase().indexOf(query.toLowerCase()) == 0) {
+              filtered.push(book);
+          }
+      }
     }
-
     this.filteredBooks = filtered;
   }
 
