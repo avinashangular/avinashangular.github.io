@@ -57,6 +57,9 @@ export class ViewContentComponent implements OnInit {
       case 'video/mp4' : 
         return LMSPlayerType.VIDEO;
         break;
+      case 'application/pdf' :
+        return LMSPlayerType.PDF;
+        break;
       default :
        return LMSPlayerType.NOPLAYER;
         break;

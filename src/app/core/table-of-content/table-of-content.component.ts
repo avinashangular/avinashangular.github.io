@@ -105,6 +105,13 @@ export class TableOfContentComponent implements OnInit {
       this.bookList = data.book;
       this.chapterList = data.chapter;
       this.topicList = data.topic;
+
+      if(this.tocService.getContentId(true) != SubjectID) {
+        this.selectedBook = null;
+        this.topicList = [];
+        this.filteredChapter = [];
+        this.filteredBooks = [];
+      }
     });
   }
 
