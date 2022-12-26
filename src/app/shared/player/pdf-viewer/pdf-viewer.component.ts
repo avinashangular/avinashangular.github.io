@@ -8,7 +8,7 @@ import { MasterPlayer } from '../master-player';
 })
 export class PdfViewerComponent  extends MasterPlayer  implements OnInit {
 
-  @Input() pdfpath: string = 'assets/sample.pdf';
+  @Input() pdfpath: string = 'https://ncert.nic.in/textbook/pdf/jesc102.pdf';
   @Input() zoom: number = 0;
   numofpages:number = 1;
 

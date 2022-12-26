@@ -61,7 +61,7 @@ export class ViewContentComponent implements OnInit {
         return LMSPlayerType.PDF;
         break;
       default :
-       return LMSPlayerType.NOPLAYER;
+       return LMSPlayerType.PDF;
         break;
     }
   }

@@ -42,13 +42,14 @@ export class TableOfContentComponent implements OnInit {
   ) { }
 
  async ngOnInit(): Promise<void> {
+  debugger;
     this.tocService.getClassAndSubject(1).subscribe((data:any)=>{
       this.classList = data['ClassCollection'];
       this.subjectListMaster = data['Subject'];
     });
 
     const classId = this.tocService.getClassId(true);
-    if (classId) {
+    if (classId && this.classList.length) {
      this.selectedClass = this.classList.filter((val:any) => {
         if (val.classid == classId) {
           this.onClassSelect(val.classid)
@@ -59,7 +60,7 @@ export class TableOfContentComponent implements OnInit {
     }
 
     const subjectId = this.tocService.getSubjectId(true);
-    if (subjectId) {
+    if (subjectId && this.subjectList.length) {
       this.selectedSubject = this.subjectList.filter((val:any) => {
         if (val.SubjectID == subjectId) {
           this.onSubjectSelect(val.SubjectID)
@@ -69,9 +70,8 @@ export class TableOfContentComponent implements OnInit {
       })[0];
     }
 
-    debugger;
     const bookId = this.tocService.getBookId(true);
-    if(bookId) {
+    if(bookId && this.bookList.length) {
       this.selectedBook = this.bookList.filter((val:any) => {
         if (val.bookid == bookId) {
           this.onBookSelect(val.bookid);
@@ -83,34 +83,39 @@ export class TableOfContentComponent implements OnInit {
   }
 
   onClassSelect(classid:number) {
-   this.subjectList = this.subjectListMaster.filter((subject:any)=> {
-      if(subject.ClassID == classid) {
-        return true;
-      }
-      return false;
-    });
 
-    // reset subject and Book
-    if (this.tocService.getClassId(true) != classid) {
+     // reset subject and Book
+     if (this.tocService.getClassId(true) != classid) {
       this.selectedSubject = null;
       this.selectedBook = null;
       this.topicList = [];
       this.filteredChapter = [];
       this.filteredBooks = [];
+      this.subjectList = [];
     }
+
+   this.subjectList = this.subjectListMaster.filter((subject:any)=> {
+      if(subject.ClassID == classid) {
+        return true;
+      }
+      return false;
+    });   
   }
 
   onSubjectSelect(SubjectID:number) {
+    if(this.tocService.getSubjectId(true) != SubjectID) {
+      this.selectedBook = null;
+      this.topicList = [];
+      this.chapterList = [];
+      this.filteredChapter = [];
+      this.bookList = [];
+      this.filteredBooks = [];
+    }
+
     this.tocService.getBookChapterAndTopic(this.selectedClass.classid,SubjectID).subscribe((data:any)=>{
       this.bookList = data.book;
       this.chapterList = data.chapter;
-      this.topicList = data.topic;
-
-      if(this.tocService.getContentId(true) != SubjectID) {
-        this.selectedBook = null;
-        this.filteredChapter = [];
-        this.filteredBooks = [];
-      }
+      this.topicList = data.topic;      
     });
   }
 

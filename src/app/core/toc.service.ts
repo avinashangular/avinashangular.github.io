@@ -14,6 +14,7 @@ export class TocService {
   private port:number = environment.port;
 
   private tocClassSubject:any;
+  private bookChapterTopic:any;
 
   private contents:any;
   private contentId = 0;
@@ -152,9 +153,9 @@ export class TocService {
 
   getBookChapterAndTopic(classId:number, subjectId:number) {
     if (this.getClassId(true) == classId && this.getSubjectId(true) == subjectId) {
-      if (this.tocClassSubject) {
+      if (this.bookChapterTopic) {
         return new Observable(observer => {
-          observer.next(this.tocClassSubject);
+          observer.next(this.bookChapterTopic);
           observer.complete();
         });
       } else if(this.lmsSession.getSesstion(LMSSessionName.TOC_BOOK_CHAPTER_TOPIC)) {
@@ -176,11 +177,11 @@ export class TocService {
       "SubjectID": subjectId
     }).pipe(
       map((resp:any)=> {
-        this.contents = resp;
+        this.bookChapterTopic = resp;
         this.setClassId(classId, true);
         this.setSubjectId(subjectId, true);
         this.lmsSession.setSession(LMSSessionName.TOC_BOOK_CHAPTER_TOPIC, resp);
-        return this.contents;
+        return this.bookChapterTopic;
       })
     );
   }
