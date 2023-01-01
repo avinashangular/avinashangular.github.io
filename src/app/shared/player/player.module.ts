@@ -6,13 +6,15 @@ import { PdfViewerComponent } from './pdf-viewer/pdf-viewer.component';
 import { SharedModule } from '../shared.module';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { McqPlayerComponent } from './mcq-player/mcq-player.component';
+import { ShakaPlayerComponent } from './shaka-player/shaka-player.component';
 
 @NgModule({
   declarations: [
     PlayerComponent,
     VideoPlayerComponent,
     PdfViewerComponent,
-    McqPlayerComponent
+    McqPlayerComponent,
+    ShakaPlayerComponent
   ],
   imports: [
     CommonModule,

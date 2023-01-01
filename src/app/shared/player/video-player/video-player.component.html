@@ -1,5 +1,5 @@
 <div class="video-player-container">
-<video id="vdPlayer"  #vdPlayer
+<!-- <video id="vdPlayer"  #vdPlayer
   disablePictureInPicture  controlsList="nodownload" 
   autoplay  controls 
   (loadeddata) ="loadeddata($event)" 
@@ -7,5 +7,7 @@
     <source src="{{videourl}}" type="video/mp4">
     Your browser does not support HTML5 video.
   </video>
-  
+   -->
+   <app-shaka-player></app-shaka-player>
+
 </div>
