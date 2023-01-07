@@ -1,3 +1,5 @@
+
+<ng-container *ngIf="isLoggedIn">
 <mat-toolbar>
  
     <button mat-icon-button *ngIf="sidenav.mode === 'over' && sideNavVisible" (click)="sidenav.toggle()">
@@ -7,7 +9,7 @@
 
   <div class="lms-right-menu">
     <mat-icon>notifications</mat-icon>
-    <mat-icon>power_settings_new</mat-icon>
+    <mat-icon (click)="logout()">power_settings_new</mat-icon>
   </div>
 </mat-toolbar>
 
@@ -45,3 +47,8 @@
        <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>
+</ng-container>
+
+<ng-container  *ngIf="!isLoggedIn">
+  <lms-login></lms-login>
+</ng-container>

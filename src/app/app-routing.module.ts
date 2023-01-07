@@ -6,6 +6,7 @@ import { TableOfContentComponent } from './core/table-of-content/table-of-conten
 import { ViewContentComponent } from './core/view-content/view-content.component';
 
 const routes: Routes = [
+  
   { path: '', redirectTo:'course', pathMatch:"full" },
   { path:'course', component: CourseComponent },
   { path: 'toc', component: TableOfContentComponent },

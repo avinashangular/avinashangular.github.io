@@ -1,0 +1,59 @@
+.login-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.login-left {
+    background-color: #023473;
+    height: 100vh;
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.login-left span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #023473;
+    opacity: 0.2;
+}
+
+.login-right {
+    background-image: url('../../../assets/images/51140.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 50%;    
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+
+/* .login-right span { 
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;
+    background-color: #e70013;
+} */
+
+.login-sec {
+    background: #fff;
+    height: 440px;
+    width: 360px;
+    box-shadow: 1px 4px 5px -4px rgb(0 0 0 / 75%);
+    padding: 20px 30px;
+    border-top: 10px solid #e70013;
+}
+
+.login-sec hr {
+    margin-left: -30px;
+    margin-right: -30px;
+}

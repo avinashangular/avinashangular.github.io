@@ -22,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 import { ViewContentComponent } from './core/view-content/view-content.component';
 import { PlayerModule } from './shared/player/player.module';
+import { LoginComponent } from './core/login/login.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { PlayerModule } from './shared/player/player.module';
     CourseComponent,
     TableOfContentComponent,
     ContentComponent,
-    ViewContentComponent
+    ViewContentComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -23,6 +23,8 @@ export class TocService {
   private subjectId = 0;
   private bookId = 0;
 
+  LoggedIn:BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+
   constructor(
     private http: HttpClient,
     private lmsSession: lmsSessionManager
