@@ -12,8 +12,8 @@
                 </div> 
                 <div class="col-lg-4 padding-right-0 filter toc">                
                     <div *ngFor="let content of constentList">
-                        <a routerLink="/view-content">
-                            <div class="content-item">
+                        <a (click)="selectQuestion(content)">
+                            <div class="content-item" [ngClass]="content.contentid == playerConfig?.options.contentid ? 'content-item-selected' : ''">
                                 <div class="play-button">
                                     <img *ngIf="content.mediatype == 'mp4'" src="assets/images/play-64.png" alt="play">
                                     <img *ngIf="content.mediatype == 'html'" src="assets/images/html.png" alt="html">

@@ -69,4 +69,8 @@ export class ViewContentComponent implements OnInit {
     }
   }
 
+  selectQuestion(content:any) {
+    this.playerConfig = this.getPlayerConfig(content);
+  }
+
 }

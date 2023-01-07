@@ -28,3 +28,7 @@ a {
     margin-bottom: 10px;
 }
 
+.content-item-selected {
+    border-left: 6px solid #e70013;
+}
+
