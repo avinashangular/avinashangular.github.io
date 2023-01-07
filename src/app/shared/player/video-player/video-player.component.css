@@ -4,3 +4,9 @@ video {
     max-height: calc(100% - 10px);
 }
 
+
+.video-player-container{
+    height: calc(100% - 130px);
+    overflow: hidden;
+    margin-bottom: 20px;
+}

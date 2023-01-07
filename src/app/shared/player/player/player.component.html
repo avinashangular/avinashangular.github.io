@@ -12,6 +12,10 @@
     [PlayOption]="playerConfig && playerConfig.options">
 </lms-mcq-player>
 
+<lms-html-player *ngSwitchCase="'HTML'"
+    [PlayOption]="playerConfig && playerConfig.options">
+</lms-html-player>
+
 <div *ngSwitchCase="'NOPLAYER'">
     <div class="no-item">
     <h5>No player found for {{playerConfig?.options.mimetype}}</h5>

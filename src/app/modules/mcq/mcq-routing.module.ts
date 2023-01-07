@@ -4,8 +4,7 @@ import { McqHomeComponent } from './mcq-home/mcq-home.component';
 import { McqQuestionComponent } from './mcq-question/mcq-question.component';
 
 const routes: Routes = [
-  { path:'', component: McqHomeComponent },
-  { path:'question', component: McqQuestionComponent }
+  { path:'', component: McqQuestionComponent }
 ];
 
 @NgModule({

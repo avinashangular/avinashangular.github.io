@@ -55,10 +55,13 @@ export class ViewContentComponent implements OnInit {
   getPlayerType(mimeType:string) : LMSPlayerType{
     switch(mimeType) {
       case 'video/mp4' : 
-        return LMSPlayerType.VIDEO;
+        return LMSPlayerType.MCQ;
         break;
       case 'application/pdf' :
         return LMSPlayerType.PDF;
+        break;
+      case 'html' :
+        return LMSPlayerType.HTML;
         break;
       default :
        return LMSPlayerType.PDF;

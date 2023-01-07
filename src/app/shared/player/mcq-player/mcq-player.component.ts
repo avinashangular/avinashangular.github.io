@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { MasterPlayer } from '../master-player';
 
 @Component({
@@ -8,11 +9,17 @@ import { MasterPlayer } from '../master-player';
 })
 export class McqPlayerComponent extends MasterPlayer implements OnInit {
 
-  constructor() {
+  constructor(
+    private router: Router
+  ) {
     super();
   }
 
   ngOnInit(): void {
+  }
+
+  navigateToQuestion() {
+    this.router.navigateByUrl('/mcq');
   }
 
 }
